@@ -27,8 +27,9 @@
 <main class="catalog-main">
   <h1 class="catalog-main__title">Каталог продукции</h1>
   <section class="catalog">
+    <h2 class="visually-hidden">Список товаров</h2>
     <ul class="catalog__list">
-      <li class="catalog__item product-card">
+      <li class="catalog__item product-card" id="pro">
         <div class="product-card__wrapper">
           <a class="product-card__img-link" href="#">
             <img class="product-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Корм с курицей в картонной упаковке весом 500 грамм.">
@@ -40,15 +41,15 @@
             <table class="product-specification">
               <tr class="product-specification__row">
                 <th class="product-specification__title">Объем</th>
-                <td class="product-specification__cell">500 г</td>
+                <td class="product-specification__value">500 г</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Вкус</th>
-                <td class="product-specification__cell">Курица</td>
+                <td class="product-specification__value">Курица</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Цена</th>
-                <td class="product-specification__cell">700 р.</td>
+                <td class="product-specification__value">700 р.</td>
               </tr>
             </table>
           </div>
@@ -67,15 +68,15 @@
             <table class="product-specification">
               <tr class="product-specification__row">
                 <th class="product-specification__title">Объем</th>
-                <td class="product-specification__cell">1000 г</td>
+                <td class="product-specification__value">1000 г</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Вкус</th>
-                <td class="product-specification__cell">Курица</td>
+                <td class="product-specification__value">Курица</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Цена</th>
-                <td class="product-specification__cell">1000 р.</td>
+                <td class="product-specification__value">1000 р.</td>
               </tr>
             </table>
           </div>
@@ -94,15 +95,15 @@
             <table class="product-specification">
               <tr class="product-specification__row">
                 <th class="product-specification__title">Объем</th>
-                <td class="product-specification__cell">500 г</td>
+                <td class="product-specification__value">500 г</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Вкус</th>
-                <td class="product-specification__cell">Рыба</td>
+                <td class="product-specification__value">Рыба</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Цена</th>
-                <td class="product-specification__cell">700 р.</td>
+                <td class="product-specification__value">700 р.</td>
               </tr>
             </table>
           </div>
@@ -121,22 +122,22 @@
             <table class="product-specification">
               <tr class="product-specification__row">
                 <th class="product-specification__title">Объем</th>
-                <td class="product-specification__cell">1000 г</td>
+                <td class="product-specification__value">1000 г</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Вкус</th>
-                <td class="product-specification__cell">Рыба</td>
+                <td class="product-specification__value">Рыба</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Цена</th>
-                <td class="product-specification__cell">1000 р.</td>
+                <td class="product-specification__value">1000 р.</td>
               </tr>
             </table>
           </div>
         </div>
         <a class="product-card__order-link action-button" href="#">Заказать</a>
       </li>
-      <li class="catalog__item product-card">
+      <li class="catalog__item product-card" id="slim">
         <div class="product-card__wrapper">
           <a class="product-card__img-link" href="#">
             <img class="product-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Корм с гречкой в картонной упаковке весом 500 грамм.">
@@ -148,15 +149,15 @@
             <table class="product-specification">
               <tr class="product-specification__row">
                 <th class="product-specification__title">Объем</th>
-                <td class="product-specification__cell">500 г</td>
+                <td class="product-specification__value">500 г</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Вкус</th>
-                <td class="product-specification__cell">Гречка</td>
+                <td class="product-specification__value">Гречка</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Цена</th>
-                <td class="product-specification__cell">400 р.</td>
+                <td class="product-specification__value">400 р.</td>
               </tr>
             </table>
           </div>
@@ -175,15 +176,15 @@
             <table class="product-specification">
               <tr class="product-specification__row">
                 <th class="product-specification__title">Объем</th>
-                <td class="product-specification__cell">1000 г</td>
+                <td class="product-specification__value">1000 г</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Вкус</th>
-                <td class="product-specification__cell">Гречка</td>
+                <td class="product-specification__value">Гречка</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Цена</th>
-                <td class="product-specification__cell">700 р.</td>
+                <td class="product-specification__value">700 р.</td>
               </tr>
             </table>
           </div>
@@ -202,15 +203,15 @@
             <table class="product-specification">
               <tr class="product-specification__row">
                 <th class="product-specification__title">Объем</th>
-                <td class="product-specification__cell">500 г</td>
+                <td class="product-specification__value">500 г</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Вкус</th>
-                <td class="product-specification__cell">Рис</td>
+                <td class="product-specification__value">Рис</td>
               </tr>
               <tr class="product-specification__row">
                 <th class="product-specification__title">Цена</th>
-                <td class="product-specification__cell">500 р.</td>
+                <td class="product-specification__value">500 р.</td>
               </tr>
             </table>
           </div>
