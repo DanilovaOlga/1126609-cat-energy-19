@@ -24,6 +24,28 @@
     </ul>
   </nav>
 </header>
+<main class="form-main">
+  <h1 class="form-main__title">Подбор программы</h1>
+  <p class="form-main__instruction">Заполните анкету и мы подберем программу питания для вашего кота</p>
+  <fieldset class="form-main__cat-data cat-data">
+    <legend class="visually-hidden">Данные кота</legend>
+    <label class="cat-data__label" for="cat-name">Имя:*</label>
+    <input class="cat-data__input" id="cat-name" name="cat-name" type="text" value="Барсик">
+    <label class="cat-data__label" for="cat-weight">Вес (кг):*</label>
+    <input class="cat-data__input" id="cat-weight" name="cat-weight" type="number" value="7">
+    <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
+    <input class="cat-data__input" id="cat-age" name="cat-age" type="number" value="7">
+  </fieldset>
+  <fieldset class="form-main__purpose purpose">
+    <legend class="visually-hidden">Цель программы</legend>
+    <input class="purpose__input" id="slim" type="radio" name="purpose" value="slim" checked>
+    <label class="purpose__label" for="slim">Похудение</label>
+    <input class="purpose__input" id="pro" type="radio" name="purpose" value="pro">
+    <label class="purpose__label" for="pro">Набор массы</label>
+    <input class="purpose__input" id="need-advice" type="radio" name="purpose" value="need-advice">
+    <label class="purpose__label" for="need-advice">Не знаю (Нужен ваш совет)</label>
+  </fieldset>
+</main>
 <footer class="page-footer">
   <section class="page-footer__address address">
     <h2 class="visually-hidden">Адрес магазина</h2>
