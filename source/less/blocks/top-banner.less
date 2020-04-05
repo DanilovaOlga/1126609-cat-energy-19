@@ -1,10 +1,11 @@
 .top-banner {
-  width: 320px;
-  padding: 30px 20px 0 20px;
-  margin-bottom: 22px;
+  padding: 30px 20px 22px 20px;
   font-family: @oswald-regular;
-  background: url("../../img/index-background-mobile@1x.jpg") no-repeat top center;
-  background-size: auto 305px;
+  background-image:
+    url("/img/index-background-mobile@1x.jpg"),
+    linear-gradient(to bottom, @corporate-color 305px, #ffffff 305px);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .top-banner__title {
@@ -29,12 +30,13 @@
   display: block;
   width: 280px;
   height: 270px;
-  margin: 0 0 3px 0;
+  margin: 0 auto 3px auto;
 }
 
 .top-banner__link {
   width: 280px;
   padding: 11px 0;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 18px;
 }
