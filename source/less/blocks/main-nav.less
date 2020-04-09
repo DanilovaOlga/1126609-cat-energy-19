@@ -44,3 +44,47 @@
   width: 25px;
   height: 19px;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav__top-wrapper {
+    margin: 0;
+  }
+
+  .main-nav__logo-img {
+    width: 174px;
+    height: 59px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .main-nav__item {
+    border: none;
+
+    &:last-child .main-nav__link {
+      padding-right: 0;
+    }
+  }
+
+  .main-nav__link {
+    width: 100%;
+    padding: 0 18px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: @very-dark-gray;
+  }
+
+  .main-nav__btn {
+    display: none;
+  }
+}
