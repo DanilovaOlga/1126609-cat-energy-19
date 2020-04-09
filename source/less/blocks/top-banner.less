@@ -8,7 +8,14 @@
   background-position: top center;
 }
 
+.top-banner__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 26px;
+}
+
 .top-banner__title {
+  margin: 0 0 25px 0;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
@@ -17,6 +24,7 @@
 }
 
 .top-banner__slogan {
+  margin: 0 0 29px 0;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
@@ -24,7 +32,66 @@
   text-transform: uppercase;
 }
 
+.top-banner__img {
+  display: block;
+  width: 280px;
+  height: 270px;
+  margin-bottom: 3px;
+}
+
 .top-banner__link {
+  padding: 11px 0 11px 0;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .top-banner {
+    position: relative;
+    width: 709px;
+    margin: 0 auto;
+    padding-bottom: 505px;
+    background: @white;
+  }
+
+  .top-banner__wrapper {
+    width: 510px;
+    margin: 0;
+    padding: 0 0 0 88px;
+  }
+
+  .top-banner__title {
+    margin-bottom: 42px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @first-line-text-color;
+  }
+
+  .top-banner__slogan {
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: @first-line-text-color;
+  }
+
+  .top-banner__img {
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 709px;
+    height: 609px;
+    margin: 0;
+  }
+
+  .top-banner__link {
+    position: relative;
+    width: 245px;
+    padding: 16px 0;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 2;
+  }
 }
