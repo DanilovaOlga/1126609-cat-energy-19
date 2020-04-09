@@ -1,8 +1,36 @@
+.main-nav__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin: 11px auto 15px auto;
+}
+
+.main-nav__logo-img {
+  display: block;
+  width: 191px;
+  height: 39px;
+}
+
+
 .main-nav__list {
   .clean-list();
+  display: none;
+}
+
+.main-nav__list--open {
+  display: block;
+}
+
+.main-nav__item {
+  border-top: 1px solid #e7e7e7;
 }
 
 .main-nav__link {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding: 22px 10px 23px 10px;
   font-family: @main-font;
   font-weight: 500;
   font-size: 20px;
@@ -10,4 +38,9 @@
   color: @first-line-text-color;
   text-transform: uppercase;
   text-align: center;
+}
+
+.main-nav__btn {
+  width: 25px;
+  height: 19px;
 }
