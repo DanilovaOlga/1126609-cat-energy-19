@@ -1,12 +1,28 @@
+.product-groups {
+  width: 280px;
+  margin: 0 auto 20px auto;
+}
+
 .product-groups__list {
   .clean-list();
 }
 
 .product-groups__item {
+  padding: 20px;
   background-color: @product-groups-bg-color;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.product-groups__wrapper {
+  margin-bottom: 19px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .product-groups__title {
+  margin: 10px 0 30px 0;
   font-family: @main-font;
   font-weight: 400;
   font-size: 24px;
@@ -16,6 +32,7 @@
 }
 
 .product-groups__description {
+  margin: 0 0 23px 0;
   font-family: @complementary-font;
   font-size: 14px;
   line-height: 18px;
@@ -23,6 +40,7 @@
 }
 
 .product-groups__link {
+  display: block;
   font-family: @main-font;
   font-size: 16px;
   line-height: 16px;
