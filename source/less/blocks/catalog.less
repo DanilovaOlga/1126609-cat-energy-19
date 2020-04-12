@@ -1,3 +1,15 @@
 .catalog__list {
   .clean-list;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.catalog__item {
+  padding: 0 @indent-mobile 24px @indent-mobile;
+  border: 1px solid #ededed;
+
+  &:not(:last-child) {
+    border-bottom: none;
+  }
 }
