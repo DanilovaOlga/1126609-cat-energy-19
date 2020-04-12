@@ -1,11 +1,28 @@
+.additional-products {
+  margin-bottom: 39px;
+}
+
 .additional-products__list {
   .clean-list();
+  margin: 0 @indent-mobile;
 }
 
 .additional-products__title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 33px @indent-mobile;
   font-family: @main-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: @first-line-text-color;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    height: 3px;
+    width: 53px;
+    margin-left: 20px;
+    background-color: @corporate-color;
+  }
 }
