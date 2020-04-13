@@ -1,6 +1,5 @@
 .product-groups {
-  width: 280px;
-  margin: 0 auto 20px auto;
+  margin: 0 @indent-mobile 20px @indent-mobile;
 }
 
 .product-groups__list {
@@ -51,7 +50,7 @@
 
 @media (min-width: @tablet-width) {
   .product-groups {
-    width: 708px;
+    margin: 0 @indent-tablet;
   }
 
   .product-groups__item {
@@ -87,20 +86,23 @@
 
 @media (min-width: @desktop-width) {
   .product-groups {
-    width: 1220px;
+    margin: 0 @indent-desktop;
   }
 
   .product-groups__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: -80px;
   }
 
   .product-groups__item {
     width: 570px;
-    margin-bottom: 0;
+    margin-right: 80px;
+    flex-grow: 1;
 
-    &:not(:last-child) {
-      margin-right: 80px;
+    &:last-child {
+      margin-bottom: 30px;
     }
   }
 }
