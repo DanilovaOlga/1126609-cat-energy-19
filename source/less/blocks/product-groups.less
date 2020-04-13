@@ -1,9 +1,23 @@
 .product-groups {
   margin: 0 @indent-mobile 20px @indent-mobile;
+
+  @media @tablet {
+    margin: 0 @indent-tablet;
+  }
+
+  @media @desktop {
+    margin: 0 @indent-desktop;
+  }
 }
 
 .product-groups__list {
   .clean-list();
+
+  @media @desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .product-groups__item {
@@ -14,11 +28,33 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media @tablet {
+    height: 372px; //временно для сетки
+    padding: 76px 60px 60px 52px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media @desktop {
+    width: 570px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .product-groups__wrapper {
   margin-bottom: 19px;
   border-bottom: 1px solid #e6e6e6;
+
+  @media @tablet {
+    border: none;
+  }
 }
 
 .product-groups__title {
@@ -29,6 +65,12 @@
   line-height: 37px;
   color: @first-line-text-color;
   text-transform: uppercase;
+
+  @media @tablet {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 37px;
+  }
 }
 
 .product-groups__description {
@@ -37,6 +79,11 @@
   font-size: 14px;
   line-height: 18px;
   color: @second-line-text-color;
+
+  @media @tablet {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .product-groups__link {
@@ -46,63 +93,9 @@
   line-height: 16px;
   color: @first-line-text-color;
   text-transform: uppercase;
-}
 
-@media (min-width: @tablet-width) {
-  .product-groups {
-    margin: 0 @indent-tablet;
-  }
-
-  .product-groups__item {
-    height: 372px; //временно для сетки
-    padding: 76px 60px 60px 52px;
-    margin-bottom: 30px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .product-groups__wrapper {
-    border: none;
-  }
-
-  .product-groups__title {
-    margin-bottom: 24px;
-    font-size: 36px;
-    line-height: 37px;
-  }
-
-  .product-groups__description {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .product-groups__link {
+  @media @tablet {
     font-size: 20px;
     line-height: 20px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .product-groups {
-    margin: 0 @indent-desktop;
-  }
-
-  .product-groups__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-right: -80px;
-  }
-
-  .product-groups__item {
-    width: 570px;
-    margin-right: 80px;
-    flex-grow: 1;
-
-    &:last-child {
-      margin-bottom: 30px;
-    }
   }
 }
