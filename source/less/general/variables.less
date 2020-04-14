@@ -1,5 +1,8 @@
+// Шрифты
 @main-font: "Oswald", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
 @complementary-font: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+@default-font: @complementary-font;
+
 // Палитра цветов
 @moderate-green: #68b738;
 @dark-green: #5eaa2f;
@@ -10,22 +13,33 @@
 @dark-gray: #444444;
 @very-light-gray: #f2f2f2;
 @light-gray: #cdcdcd;
-//
-@tablet: ~"(min-width: 768px)";
+
+// Значения ширин
+@mobile-width: 320px;
 @tablet-width: 768px;
-@desktop: ~"(min-width: 1440px)";
 @desktop-width: 1440px;
+
+// Брейкпоинты
+@tablet: ~"(min-width: @{tablet-width})";
+@desktop: ~"(min-width: @{desktop-width})";
+
+// Отступы
 @indent-mobile: 20px;
 @indent-tablet: 30px;
 @indent-desktop: 110px;
+
+// Фирменный цвет
 @corporate-color: @moderate-green;
-@bg-image-color: @moderate-dark-green;
-@button-text-color: @white;
+
+// Цвет текста
 @first-line-text-color: @mostly-black;
 @second-line-text-color: @dark-gray;
+@default-color: @mostly-black;
+@button-text-color: @white;
+
+// Цвет фона
+@bg-image-color: @moderate-dark-green;
 @footer-bg-color: @very-light-gray;
 @demo-example-bg-color: @very-light-gray;
 @product-groups-bg-color: @very-light-gray;
 @default-bg-color: @white;
-@default-color: @mostly-black;
-@default-font: @complementary-font;
