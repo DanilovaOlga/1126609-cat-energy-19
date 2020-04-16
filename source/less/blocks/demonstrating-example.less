@@ -1,8 +1,10 @@
 .demonstrating-example {
+  padding: 15px @indent-mobile 37px @indent-mobile;
   background-color: @demo-example-bg-color;
 }
 
 .demonstrating-example__title {
+  margin: 0;
   font-family: @main-font;
   font-weight: 400;
   font-size: 36px;
@@ -11,6 +13,7 @@
 }
 
 .demonstrating-example__promo-text {
+  margin: 25px 0 25px 0;
   font-family: @complementary-font;
   font-size: 14px;
   line-height: 18px;
@@ -18,9 +21,26 @@
 }
 
 .demonstrating-example__expenses {
+  margin: 0 0 43px 0;
   font-family: @main-font;
   font-size: 14px;
   line-height: 20px;
   color: @first-line-text-color;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.demonstrating-example__img-wrapper {
+  margin-bottom: 33px;
+}
+
+.demonstrating-example__img {
+  display: block;
+  width: 311px;
+  height: 232px;
+  margin: 0 auto;
+
+  &--slim {
+    display: none;
+  }
 }
