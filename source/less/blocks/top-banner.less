@@ -14,8 +14,9 @@
   }
 
   @media @desktop {
-    padding-bottom: 186px;
-    margin: -221px 0 82px 109px;
+    min-height: 696px;
+    margin: -170px 0 80px 0;
+    padding-top: 142px;
     background-image:
       url("/img/index-background-desktop@1x.jpg"),
       linear-gradient(to right, #ffffff 50%, @bg-image-color 50%);
@@ -36,7 +37,10 @@
   }
 
   @media @desktop {
-    padding: 221px 726px 0 81px;
+    width: 610px;
+    min-height: 499px;
+    margin: 0 @indent-desktop;
+    padding: 79px 81px 0 81px;
   }
 }
 
@@ -54,6 +58,7 @@
     line-height: 60px;
     text-align: left;
     color: @first-line-text-color;
+    z-index: 1;
   }
 }
 
@@ -96,8 +101,8 @@
   }
 
   @media @desktop {
-    bottom: 55px;
-    right: 604px;
+    left: 74%;
+    transform: none;
     width: 552px;
     height: 499px;
   }
