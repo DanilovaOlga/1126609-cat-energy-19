@@ -2,8 +2,7 @@
   margin: 0 @indent-mobile 42px @indent-mobile;
 
   @media @tablet {
-    //margin: 0 @indent-tablet;
-    margin: 0;
+    margin: 0 0 52px 0;
   }
 }
 
@@ -57,13 +56,17 @@
 
   @media @tablet {
     max-width: 50%;
-    //min-height: 230px;
     padding-top: 111px;
     padding-left: @indent-tablet;
     padding-bottom: 50px;
     margin-bottom: 85px;
     font-size: 16px;
     line-height: 24px;
+
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
 
     &::before {
       width: 80px;
@@ -74,7 +77,6 @@
 
     &::after {
       position: absolute;
-      //bottom: 0;
       top: -40px;
       left: 145px;
       content: counter(item);
