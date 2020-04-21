@@ -1,3 +1,16 @@
+.catalog {
+  margin-bottom: 30px;
+}
+
 .catalog__list {
-  .clean-list;
+  .clean-list();
+}
+
+.catalog__item {
+  padding: 0 @indent-mobile 24px @indent-mobile;
+  border: 1px solid #ededed;
+
+  &:not(:last-child) {
+    border-bottom: none;
+  }
 }

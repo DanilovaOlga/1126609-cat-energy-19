@@ -1,13 +1,35 @@
+.product-card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card__img-link {
+  flex-shrink: 0;
+}
+
+.product-card__img {
+  display: block;
+  width: 140px;
+  height: 144px;
+}
+
+.product-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  padding-right: 60px;
+  margin: 0 0 9px 0;
+}
+
 .product-card__title-link {
   font-family: @main-font;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
   color: @first-line-text-color;
 }
 
 .product-card__order-link {
+  padding: 10px 0;
   font-size: 16px;
   line-height: 20px;
 }

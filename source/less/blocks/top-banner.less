@@ -1,30 +1,121 @@
 .top-banner {
+  margin-bottom: 22px;
   font-family: @main-font;
   font-weight: 400;
   background-image:
     url("/img/index-background-mobile@1x.jpg"),
-    linear-gradient(to bottom, @corporate-color 305px, #ffffff 305px);
+    linear-gradient(to bottom, @bg-image-color 305px, #ffffff 305px);
   background-repeat: no-repeat;
   background-position: top center;
+
+  @media @tablet {
+    position: relative;
+    margin: 0 30px 0 30px;
+    padding-bottom: 530px;
+    background: @white;
+  }
+
+  @media @desktop {
+    padding-bottom: 186px;
+    margin: -221px 0 82px 109px;
+    background-image:
+      url("/img/index-background-desktop@1x.jpg"),
+      linear-gradient(to right, #ffffff 50%, @bg-image-color 50%);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+}
+
+.top-banner__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 26px;
+
+  @media @tablet {
+    padding: 0 205px 0 88px;
+  }
+
+  @media @desktop {
+    padding: 221px 726px 0 81px;
+  }
 }
 
 .top-banner__title {
+  margin: 0 0 25px 0;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
   text-align: center;
+
+  @media @tablet {
+    margin-bottom: 42px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @first-line-text-color;
+  }
 }
 
 .top-banner__slogan {
+  margin: 0 0 29px 0;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+
+  @media @tablet {
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: @first-line-text-color;
+  }
+
+  @media @desktop {
+    margin-bottom: 54px;
+  }
+}
+
+.top-banner__img {
+  display: block;
+  align-self: center;
+  width: 280px;
+  height: 270px;
+  margin-bottom: 4px;
+
+  @media @tablet {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 709px;
+    height: 609px;
+    margin: 0;
+  }
+
+  @media @desktop {
+    bottom: 55px;
+    right: 604px;
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .top-banner__link {
+  margin: 0 @indent-mobile;
+  padding: 10px 0 11px 0;
   font-size: 14px;
   line-height: 18px;
+
+  @media @tablet {
+    position: relative;
+    width: 245px;
+    padding: 16px 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 2;
+  }
 }
