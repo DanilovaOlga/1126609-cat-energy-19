@@ -1,3 +1,8 @@
+.more-products-card {
+  border: 1px solid @light-gray;
+  background-color: @white;
+}
+
 .more-products-card__title {
   margin: 0 0 8px 0;
   font-family: @main-font;
@@ -7,6 +12,10 @@
   text-transform: uppercase;
   text-align: center;
   color: @first-line-text-color;
+
+  @media @tablet {
+    font-size: 20px;
+  }
 }
 
 .more-products-card__text {
@@ -16,6 +25,10 @@
   line-height: 16px;
   text-align: center;
   color: @second-line-text-color;
+
+  @media @tablet {
+    font-size: 16px;
+  }
 }
 
 .more-products-card__show-all-link {
