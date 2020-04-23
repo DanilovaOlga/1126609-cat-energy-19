@@ -66,17 +66,17 @@
   & + .form__label {
     position: relative;
     padding: 5px 0 5px 46px;
-  }
 
-  & + .form__label::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    border: 1px solid @light-gray;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border: 1px solid @light-gray;
+    }
   }
 
   &--radio + .form__label::before {
