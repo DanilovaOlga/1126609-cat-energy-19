@@ -4,6 +4,10 @@
   align-items: center;
   margin: 0;
   padding: 21px 0;
+
+  @media @tablet {
+    padding: 0;
+  }
 }
 
 .developer__link {
@@ -19,5 +23,13 @@
     width: 27px;
     height: 34px;
     background-color: lightblue;
+  }
+
+  @media @tablet {
+    margin-right: 23px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

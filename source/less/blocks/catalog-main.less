@@ -1,5 +1,9 @@
 .catalog-main {
   padding-top: 14px;
+
+  @media @tablet {
+    padding-top: 0;
+  }
 }
 
 .catalog-main__title {
@@ -9,4 +13,10 @@
   font-weight: normal;
   line-height: 60px;
   color: @first-line-text-color;
+
+  @media @tablet {
+    margin: 0 @indent-tablet 96px @indent-tablet;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
