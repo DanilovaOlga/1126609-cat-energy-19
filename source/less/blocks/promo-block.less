@@ -3,12 +3,26 @@
   margin: 0 @indent-mobile 35px @indent-mobile;
   padding: 40px 55px;
   background: @corporate-color url("/img/gift-photo-mobile@1x.jpg") no-repeat center;
+
+  @media @tablet {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    margin: 0 @indent-tablet 76px @indent-tablet;
+    padding-left: 424px;
+    padding-right: 120px;
+  }
 }
 
 .promo-block__text {
+  margin: 0;
   font-family: @complementary-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: @white;
+
+  @media @tablet {
+    text-align: left;
+  }
 }
