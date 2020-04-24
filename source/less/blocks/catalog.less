@@ -2,7 +2,8 @@
   margin-bottom: 30px;
 
   @media @tablet {
-    padding: 70px @indent-tablet;
+    padding: 68px @indent-tablet;
+    margin-bottom: 0;
   }
 }
 
@@ -19,5 +20,10 @@
 .catalog__item {
   @media @tablet {
     width: 45.8%;
+
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
   }
 }
