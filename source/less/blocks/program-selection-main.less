@@ -1,5 +1,9 @@
 .program-selection-main {
   padding-top: 14px;
+
+  @media @tablet {
+    padding-top: 0;
+  }
 }
 
 .program-selection-main__title {
@@ -11,6 +15,7 @@
   color: @first-line-text-color;
 
   @media @tablet {
+    margin: 0 @indent-tablet 56px @indent-tablet;
     font-size: 60px;
   }
 }
@@ -24,6 +29,9 @@
   text-transform: uppercase;
 
   @media @tablet {
+    width: 56%;
+    margin: 0 @indent-tablet;
+    padding-left: 40px;
     font-size: 20px;
     line-height: 30px;
   }
