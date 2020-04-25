@@ -7,6 +7,10 @@
   padding: 22px @indent-mobile;
   border: 0;
 
+  @media @tablet {
+    padding: 35px 67px 35px 72px;
+  }
+
   &--title-visible {
     padding-top: 14px;
     padding-bottom: 14px;
@@ -15,6 +19,15 @@
   &--program {
     margin-bottom: 14px;
     border: 1px solid #ededed;
+
+    @media @tablet {
+      padding: 24px 27px;
+      margin: 35px 67px 35px 72px;
+
+      & .form__field-wrapper {
+        margin-bottom: 13px;
+      }
+    }
   }
 }
 
@@ -37,6 +50,10 @@
   align-items: center;
   margin-bottom: 15px;
 
+  @media @tablet {
+    margin-bottom: 20px;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -51,6 +68,7 @@
   text-transform: uppercase;
 
   @media @tablet {
+    margin-right: 17px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -70,6 +88,7 @@
   background-color: @white;
 
   @media @tablet {
+    padding: 15px 20px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -82,6 +101,10 @@
     position: relative;
     padding: 5px 0 5px 46px;
 
+    @media @tablet {
+      padding: 10px 60px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -91,6 +114,11 @@
       width: 30px;
       height: 30px;
       border: 1px solid @light-gray;
+
+      @media @tablet {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
