@@ -2,7 +2,7 @@
   margin: 0 @indent-mobile 42px @indent-mobile;
 
   @media @tablet {
-    margin: 0 0 52px 0;
+    margin: 0 @indent-tablet 52px @indent-tablet;
   }
 }
 
@@ -16,9 +16,7 @@
 
   @media @tablet {
     margin-bottom: 73px;
-    margin-left: @indent-tablet;
     font-size: 60px;
-    line-height: 60px;
   }
 }
 
@@ -28,7 +26,7 @@
   @media @tablet {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-right: @indent-tablet * (-2);
     counter-reset: item;
   }
 }
@@ -45,6 +43,17 @@
   line-height: 18px;
   color: @second-line-text-color;
 
+  @media @tablet {
+    align-items: flex-start;
+    flex-basis: 50%;
+    min-height: 233px;
+    padding-top: calc(80px + 31px); // 80px - высота псевдоэлемента, 31px - отступ до текста
+    padding-left: 0;
+    margin-bottom: 85px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -52,40 +61,18 @@
     width: 60px;
     height: 60px;
     background-color: @corporate-color;
-  }
 
-  @media @tablet {
-    max-width: 50%;
-    padding-top: 111px;
-    padding-left: @indent-tablet;
-    padding-bottom: 50px;
-    margin-bottom: 85px;
-    font-size: 16px;
-    line-height: 24px;
-
-    &:nth-last-child(1),
-    &:nth-last-child(2) {
-      margin-bottom: 0;
-    }
-
-    &::before {
+    @media @tablet {
       width: 80px;
       height: 80px;
       top: 0;
-      left: @indent-tablet;
     }
+  }
 
-    &::after {
-      position: absolute;
-      top: -40px;
-      left: 145px;
-      content: counter(item);
-      counter-increment: item;
-      font-family: @main-font;
-      font-size: 281px;
-      line-height: 281px;
-      color: @very-light-gray;
-      z-index: -1;
+  &:nth-last-child(1),
+  &:nth-last-child(2) {
+    @media @tablet {
+      margin-bottom: 0;
     }
   }
 }
@@ -94,6 +81,22 @@
   margin: 0;
 
   @media @tablet {
-    width: 70%;
+    position: relative;
+    width: 65.6%;
+  }
+
+  &::before {
+    @media @tablet {
+      position: absolute;
+      top: -152px;
+      left: 45.2%;
+      content: counter(item);
+      counter-increment: item;
+      font-family: @main-font;
+      font-size: 281px;
+      line-height: 281px;
+      color: @very-light-gray;
+      z-index: -1;
+    }
   }
 }
