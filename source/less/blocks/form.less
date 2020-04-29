@@ -187,9 +187,11 @@
 }
 
 .form__bottom-block {
-  display: flex;
-  align-items: center;
-  padding: 0 70px;
+  @media @tablet {
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
+  }
 }
 
 .form__send-btn {
