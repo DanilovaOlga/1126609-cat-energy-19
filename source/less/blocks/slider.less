@@ -6,6 +6,10 @@
   @media @tablet {
     min-height: 34px;
   }
+
+  @media @desktop {
+    justify-content: flex-end;
+  }
 }
 
 .slider__scale {
@@ -25,6 +29,11 @@
     border: none;
     border-radius: 2.5px;
     background-color: #dcdcdc;
+  }
+
+  @media @desktop {
+    width: 66%;
+    margin: 0 22px;
   }
 }
 
@@ -47,8 +56,10 @@
     border-radius: 50%;
     background-color: @white;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  }
 
-    &::before {
+  &::before {
+    @media @tablet {
       content: "";
       position: absolute;
       top: 50%;
