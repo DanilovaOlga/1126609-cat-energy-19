@@ -1,5 +1,9 @@
 .working-basics {
   margin: 0 @indent-mobile 42px @indent-mobile;
+
+  @media @tablet {
+    margin: 0 @indent-tablet 52px @indent-tablet;
+  }
 }
 
 .working-basics__title {
@@ -9,10 +13,22 @@
   font-weight: 400;
   line-height: 60px;
   color: @first-line-text-color;
+
+  @media @tablet {
+    margin-bottom: 73px;
+    font-size: 60px;
+  }
 }
 
 .working-basics__list {
   .clean-list();
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    counter-reset: item;
+  }
 }
 
 .working-basics__item {
@@ -27,6 +43,17 @@
   line-height: 18px;
   color: @second-line-text-color;
 
+  @media @tablet {
+    align-items: flex-start;
+    flex-basis: calc(50% - 30px); // 60px - расстояние между айтемами
+    min-height: 233px;
+    padding-top: calc(80px + 31px); // 80px - высота псевдоэлемента, 31px - отступ до текста
+    padding-left: 0;
+    margin-bottom: 85px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -34,5 +61,42 @@
     width: 60px;
     height: 60px;
     background-color: @corporate-color;
+
+    @media @tablet {
+      width: 80px;
+      height: 80px;
+      top: 0;
+    }
+  }
+
+  &:nth-last-child(1),
+  &:nth-last-child(2) {
+    @media @tablet {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.working-basics__thesis {
+  margin: 0;
+
+  @media @tablet {
+    position: relative;
+    width: 78%;
+  }
+
+  &::before {
+    @media @tablet {
+      position: absolute;
+      top: -152px;
+      left: 45.2%;
+      content: counter(item);
+      counter-increment: item;
+      font-family: @main-font;
+      font-size: 281px;
+      line-height: 281px;
+      color: @very-light-gray;
+      z-index: -1;
+    }
   }
 }

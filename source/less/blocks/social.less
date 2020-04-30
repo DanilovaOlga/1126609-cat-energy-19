@@ -3,14 +3,28 @@
   display: flex;
   justify-content: center;
   padding: 21px 0 18px 0;
-  height: 64px; //временно для сетки
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
+
+  @media @tablet {
+    padding: 0;
+    border: none;
+  }
 }
 
 .social__item {
-  width: 23px;
-  height: 23px;
-  margin: 0 16px;
+  width: 24px;
+  height: 24px;
+  margin-right: 32px;
   border: 1px solid lightblue; //временно для сетки
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media @tablet {
+    width: 30px;
+    height: 30px;
+    margin-right: 28px;
+  }
 }

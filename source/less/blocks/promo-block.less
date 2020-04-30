@@ -1,14 +1,40 @@
 .promo-block {
+  display: flex;
+  flex-direction: column;
   height: 289px;
   margin: 0 @indent-mobile 35px @indent-mobile;
-  padding: 40px 55px;
   background: @corporate-color url("/img/gift-photo-mobile@1x.jpg") no-repeat center;
+
+  @media @tablet {
+    flex-direction: row;
+    height: 200px;
+    margin: 0 @indent-tablet 76px @indent-tablet;
+    background: @corporate-color url("/img/gift-photo-tablet@1x.jpg") no-repeat center;
+  }
+
+  &::before {
+    content: "";
+    flex-basis: 50%;
+    padding-top: 65px;
+
+    @media @tablet {
+      padding-left: 91px;
+    }
+  }
 }
 
 .promo-block__text {
+  flex-basis: 50%;
+  margin: 0;
+  padding: 42px 58px 0 58px;
   font-family: @complementary-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: @white;
+
+  @media @tablet {
+    padding: 71px 120px 0 70px;
+    text-align: left;
+  }
 }

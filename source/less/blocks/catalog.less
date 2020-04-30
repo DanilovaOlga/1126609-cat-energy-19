@@ -1,16 +1,29 @@
 .catalog {
   margin-bottom: 30px;
+
+  @media @tablet {
+    padding: 68px @indent-tablet;
+    margin-bottom: 0;
+  }
 }
 
 .catalog__list {
   .clean-list();
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .catalog__item {
-  padding: 0 @indent-mobile 24px @indent-mobile;
-  border: 1px solid #ededed;
+  @media @tablet {
+    width: 45.8%;
 
-  &:not(:last-child) {
-    border-bottom: none;
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
   }
 }

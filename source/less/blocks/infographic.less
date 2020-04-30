@@ -4,6 +4,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 32px;
+  background-color: inherit;
+
+  @media @tablet {
+    width: 52%;
+    margin-bottom: 0;
+  }
 }
 
 .infographic__item {
@@ -16,6 +22,7 @@
   padding: 13px 0 17px 0;
   border: 1px solid @light-gray;
   border-radius: 3px;
+  background-color: inherit;
 }
 
 .infographic__number {
@@ -27,6 +34,11 @@
   color: @first-line-text-color;
   text-transform: uppercase;
   text-align: center;
+
+  @media @tablet {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .infographic__note {
@@ -40,6 +52,13 @@
   color: @second-line-text-color;
   text-transform: lowercase;
   text-align: center;
-  background-color: @very-light-gray;
+  background-color: inherit;
   transform: translateY(65%);
+
+  @media @tablet {
+    width: auto;
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

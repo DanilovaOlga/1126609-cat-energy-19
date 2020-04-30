@@ -2,7 +2,7 @@
   margin: 0 @indent-mobile 18px @indent-mobile;
 
   @media @tablet {
-    margin: 0 @indent-tablet;
+    margin: 0 @indent-tablet 44px @indent-tablet;
   }
 
   @media @desktop {
@@ -21,44 +21,72 @@
 }
 
 .product-groups__item {
-  padding: 30px 20px 20px 20px;
+  padding: 20px;
   margin-bottom: 20px;
   background-color: @product-groups-bg-color;
+
+  @media @tablet {
+    padding: 60px 52px;
+    margin-bottom: 30px;
+  }
+
+  @media @desktop {
+    width: 570px;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  @media @tablet {
-    height: 372px; //временно для сетки
-    padding: 76px 60px 60px 52px;
-    margin-bottom: 30px;
-
-    &:last-child {
+  &:nth-last-child(2) {
+    @media @desktop {
       margin-bottom: 0;
-    }
-  }
-
-  @media @desktop {
-    width: 570px;
-
-    &:last-child {
-      margin-bottom: 30px;
     }
   }
 }
 
 .product-groups__wrapper {
+  position: relative;
+  padding-bottom: 23px;
   margin-bottom: 19px;
   border-bottom: 1px solid #e6e6e6;
 
   @media @tablet {
+    margin-bottom: 0;
+    padding-bottom: 59px;
     border: none;
+  }
+
+  &--slim {
+    @media @tablet {
+      padding-right: 220px;
+    }
+  }
+
+  &--pro {
+    @media @tablet {
+      padding-right: 260px;
+    }
+  }
+
+  &::before {
+    @media @tablet {
+      position: absolute;
+      content: "";
+      right: 9px;
+      bottom: 0;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: @corporate-color;
+    }
   }
 }
 
 .product-groups__title {
-  margin: 0 0 30px 0;
+  position: relative;
+  margin: 0 0 20px 0;
+  padding: 10px 0 10px 70px;
   font-family: @main-font;
   font-weight: 400;
   font-size: 24px;
@@ -67,14 +95,31 @@
   text-transform: uppercase;
 
   @media @tablet {
-    margin-bottom: 24px;
+    margin-bottom: 10px;
+    padding: 15px 0;
     font-size: 36px;
     line-height: 37px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @corporate-color;
+
+    @media @tablet {
+      display: none;
+    }
   }
 }
 
 .product-groups__description {
-  margin: 0 0 23px 0;
+  margin: 0;
   font-family: @complementary-font;
   font-size: 14px;
   line-height: 18px;
