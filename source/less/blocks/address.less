@@ -1,14 +1,28 @@
+.address__content-wrapper {
+  position: relative;
+  max-width: @desktop-wrapper;
+  margin: 0 auto;
+}
+
 .address__content {
   display: flex;
   justify-content: space-between;
   padding: 28px @indent-mobile 25px @indent-mobile;
 
-  &--index {
-    background-color: @white;
+  @media @tablet {
+    padding: 64px 71px 58px 71px;
   }
 
-  @media @tablet {
-    padding: 63px 70px;
+  @media @desktop {
+    position: absolute;
+    left: 0;
+    top: 95px;
+    width: 570px;
+    padding: 63px 76px;
+  }
+
+  &--index {
+    background-color: @white;
   }
 }
 
@@ -43,6 +57,15 @@
     line-height: 20px;
     text-align: right;
   }
+
+  @media @desktop {
+    width: 40%;
+    text-align: left;
+  }
+}
+
+.address__location-street {
+  margin-bottom: 19px;
 }
 
 .address__map {
@@ -52,6 +75,6 @@
   border: none;
 
   @media @tablet {
-    height: 400px;
+    height: 396px;
   }
 }
