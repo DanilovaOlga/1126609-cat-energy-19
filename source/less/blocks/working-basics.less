@@ -4,6 +4,11 @@
   @media @tablet {
     margin: 0 @indent-tablet 52px @indent-tablet;
   }
+
+  @media @desktop {
+    max-width: @desktop-wrapper;
+    margin: 0 auto 10px auto;
+  }
 }
 
 .working-basics__title {
@@ -54,6 +59,11 @@
     line-height: 24px;
   }
 
+  @media @desktop {
+    flex-basis: calc(25% - 60px);
+    margin-bottom: 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -83,6 +93,10 @@
   @media @tablet {
     position: relative;
     width: 78%;
+  }
+
+  @media @desktop {
+    width: 100%;
   }
 
   &::before {
