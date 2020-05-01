@@ -22,10 +22,18 @@
       linear-gradient(to right, #ffffff 50%, @bg-image-color 50%);
     background-repeat: no-repeat;
     background-position: top right;
+    background-size: 50%;
   }
 }
 
 .top-banner__wrapper {
+  @media @desktop {
+    max-width: @desktop-wrapper;
+    margin: 0 auto;
+  }
+}
+
+.top-banner__content {
   display: flex;
   flex-direction: column;
   padding-top: 26px;
@@ -37,9 +45,8 @@
   }
 
   @media @desktop {
-    width: 610px;
+    width: 50%;
     min-height: 499px;
-    margin: 0 @indent-desktop;
     padding: 79px 81px 0 81px;
   }
 }
@@ -79,7 +86,7 @@
   }
 
   @media @desktop {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 }
 
