@@ -18,37 +18,44 @@
 .additional-products__title {
   display: flex;
   align-items: center;
-  margin: 0 0 33px @indent-mobile;
+  margin: 0 0 34px @indent-mobile;
   font-family: @main-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: @first-line-text-color;
 
-  &::after {
-    content: "";
-    flex-grow: 1;
-    height: 3px;
-    margin-left: 20px;
-    background-color: @corporate-color;
-  }
-
   @media @tablet {
-    margin: 0 0 79px 0;
+    margin: 0 0 81px 0;
     font-size: 36px;
     line-height: 36px;
+  }
 
-    &::after {
-      flex-grow: 13;
-      margin-left: 40px;
-    }
-
-    &::before {
+  &::before {
+    @media @tablet {
+      position: relative;
+      top: 6px;
       content: "";
       flex-grow: 1;
       height: 3px;
-      margin-right: 40px;
+      margin-right: 39px;
       background-color: @corporate-color;
+    }
+  }
+
+  &::after {
+    position: relative;
+    top: 3px;
+    content: "";
+    flex-grow: 1;
+    height: 3px;
+    margin-left: 22px;
+    background-color: @corporate-color;
+
+    @media @tablet {
+      top: 6px;
+      flex-grow: 12;
+      margin-left: 36px;
     }
   }
 }
