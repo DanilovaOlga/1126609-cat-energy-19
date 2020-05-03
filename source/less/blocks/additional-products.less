@@ -1,23 +1,36 @@
 .additional-products {
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 
   @media @tablet {
-    margin-bottom: 69px;
+    margin-bottom: 76px;
+  }
+}
+
+.additional-products__wrapper {
+  @media @desktop {
+    display: flex;
+    justify-content: space-between;
+    max-width: @desktop-wrapper;
+    margin: 0 auto 86px auto;
   }
 }
 
 .additional-products__list {
   .clean-list();
-  margin: 0 @indent-mobile;
+  margin: 0 @indent-mobile 39px @indent-mobile;
 
   @media @tablet {
-    margin: 0 @indent-tablet;
+    margin: 0 @indent-tablet 69px @indent-tablet;
+  }
+
+  @media @desktop {
+    width: 73.4%;
+    margin: 0;
   }
 }
 
 .additional-products__title {
-  display: flex;
-  align-items: center;
+  position: relative;
   margin: 0 0 34px @indent-mobile;
   font-family: @main-font;
   font-weight: 400;
@@ -26,36 +39,55 @@
   color: @first-line-text-color;
 
   @media @tablet {
-    margin: 0 0 81px 0;
+    margin: 0 0 81px @indent-tablet;
     font-size: 36px;
     line-height: 36px;
   }
 
-  &::before {
-    @media @tablet {
-      position: relative;
-      top: 6px;
-      content: "";
-      flex-grow: 1;
-      height: 3px;
-      margin-right: 39px;
-      background-color: @corporate-color;
-    }
+  @media @desktop {
+    max-width: @desktop-wrapper;
+    margin: 0 auto 81px auto;
   }
 
   &::after {
-    position: relative;
-    top: 3px;
+    position: absolute;
     content: "";
-    flex-grow: 1;
+    top: 14px;
+    left: 0;
     height: 3px;
-    margin-left: 22px;
+    width: 100vw;
     background-color: @corporate-color;
+    z-index: -1;
 
     @media @tablet {
-      top: 6px;
-      flex-grow: 12;
-      margin-left: 36px;
+      top: 23px;
     }
+  }
+
+  &::before {
+    @media @tablet {
+      position: absolute;
+      content: "";
+      top: 23px;
+      right: 0;
+      height: 3px;
+      width: 100vw;
+      background-color: @corporate-color;
+      z-index: -1;
+    }
+  }
+}
+
+.additional-products__text {
+  background-color: @white;
+  padding-right: 23px;
+
+  @media @tablet {
+    padding: 0 36px;
+  }
+
+  @media @desktop {
+    padding: 0 40px;
+    margin-left: -40px;
   }
 }
