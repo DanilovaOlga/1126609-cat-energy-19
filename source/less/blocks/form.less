@@ -14,6 +14,7 @@
   &--title-visible {
     padding-top: 14px;
     padding-bottom: 14px;
+    margin-bottom: 15px;
 
     @media @tablet {
       padding-top: 33px;
@@ -22,17 +23,21 @@
   }
 
   &--program {
-    margin-bottom: 14px;
+    margin-bottom: 28px;
     border: 1px solid #ededed;
 
     @media @tablet {
       padding: 24px 27px;
-      margin: 35px 67px 42px 72px;
+      margin: 35px 67px 75px 72px;
 
       & .form__field-wrapper {
         margin-bottom: 13px;
       }
     }
+  }
+
+  &--comment {
+    margin-bottom: 10px;
   }
 
   &--additionally {
@@ -65,7 +70,8 @@
 }
 
 .form__title {
-  margin: 0 0 34px 0;
+  position: relative;
+  margin: 0 @indent-mobile 20px @indent-mobile;
   font-family: @main-font;
   font-weight: 400;
   font-size: 24px;
@@ -73,13 +79,73 @@
   color: @first-line-text-color;
 
   @media @tablet {
-    margin-bottom: 76px;
+    margin: 0 @indent-tablet 76px @indent-tablet;
     font-size: 36px;
     line-height: 36px;
+  }
 
-    &--additionally {
+  @media @desktop {
+    max-width: @desktop-wrapper;
+    margin: 0 auto;
+  }
+
+  &--additionally {
+    @media @tablet {
       margin-bottom: 50px;
     }
+  }
+
+  &::before {
+    @media @tablet {
+      position: absolute;
+      right: -@indent-tablet;
+      top: 23px;
+      content: "";
+      height: 3px;
+      width: 100vw;
+      background-color: @corporate-color;
+      z-index: -1;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    left: -@indent-mobile;
+    top: 14px;
+    content: "";
+    height: 3px;
+    width: 100vw;
+    background-color: @corporate-color;
+    z-index: -1;
+
+    @media @tablet {
+      left: -@indent-tablet;
+      top: 23px;
+    }
+
+    @media @desktop {
+      left: -@indent-desktop;
+    }
+  }
+}
+
+.form__title-text {
+  display: inline-block;
+  width: min-content;
+  padding-left: @indent-mobile;
+  padding-right: 22px;
+  margin-left: -@indent-mobile;
+  background-color: @white;
+
+  @media @tablet {
+    width: auto;
+    padding-left: 40px;
+    padding-right: 42px;
+    margin-left: 0;
+  }
+
+  @media @desktop {
+    margin-left: -40px;
   }
 }
 
@@ -196,7 +262,7 @@
 
 .form__send-btn {
   width: calc(100% - @indent-mobile * 2);
-  margin: 20px @indent-mobile;
+  margin: 21px @indent-mobile;
   padding: 10px 0;
   border: none;
   font-size: 16px;
