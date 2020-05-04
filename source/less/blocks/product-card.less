@@ -5,10 +5,6 @@
   padding: 0 @indent-mobile 24px @indent-mobile;
   border: 1px solid #ededed;
 
-  &:not(:last-child) {
-    border-bottom: none;
-  }
-
   @media @tablet {
     position: relative;
     flex-direction: column;
@@ -17,6 +13,14 @@
     margin-bottom: 140px;
     border: none;
     background-color: @very-light-gray;
+  }
+
+  @media @desktop {
+    margin-bottom: 142px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: none;
   }
 }
 
@@ -68,6 +72,10 @@
     font-size: 20px;
     text-align: center;
   }
+
+  @media @desktop {
+    padding: 0 18px;
+  }
 }
 
 .product-card__title-link {
@@ -85,6 +93,5 @@
 
   @media @tablet {
     width: calc(100% - 76px);
-    //margin: 0 36px;
   }
 }

@@ -4,11 +4,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 32px;
-  background-color: inherit;
+  background-color: @very-light-gray;
 
   @media @tablet {
     width: 52%;
     margin-bottom: 0;
+    background-color: @white;
+  }
+
+  @media @desktop {
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 62px;
+    background-color: @very-light-gray;
   }
 }
 
@@ -23,6 +31,19 @@
   border: 1px solid @light-gray;
   border-radius: 3px;
   background-color: inherit;
+
+  @media @tablet {
+    padding-top: 15px;
+  }
+
+  @media @desktop {
+    width: 36.7%;
+    margin-right: 43px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .infographic__number {
@@ -56,6 +77,7 @@
   transform: translateY(65%);
 
   @media @tablet {
+    bottom: 2px;
     width: auto;
     padding: 0 8px;
     font-size: 14px;

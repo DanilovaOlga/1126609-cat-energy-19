@@ -18,6 +18,12 @@
     margin: 0 @indent-tablet 56px @indent-tablet;
     font-size: 60px;
   }
+
+  @media @desktop {
+    max-width: @desktop-wrapper;
+    margin: 0 auto 40px auto;
+    padding: 17px 0;
+  }
 }
 
 .program-selection-main__instruction {
@@ -35,12 +41,23 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media @desktop {
+    width: @desktop-wrapper;
+    margin: 0 auto;
+    padding: 0 800px 0 0;
+    margin-bottom: 65px;
+  }
 }
 
 .program-selection-main__form {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   @media @tablet {
     margin-bottom: 74px;
+  }
+
+  @media @desktop {
+    margin-bottom: 82px;
   }
 }

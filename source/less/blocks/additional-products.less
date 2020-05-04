@@ -1,54 +1,87 @@
 .additional-products {
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 
   @media @tablet {
-    margin-bottom: 69px;
+    margin-bottom: 76px;
+  }
+}
+
+.additional-products__wrapper {
+  @media @desktop {
+    display: flex;
+    justify-content: space-between;
+    max-width: @desktop-wrapper;
+    margin: 0 auto 86px auto;
   }
 }
 
 .additional-products__list {
   .clean-list();
-  margin: 0 @indent-mobile;
+  margin: 0 @indent-mobile 39px @indent-mobile;
 
   @media @tablet {
-    margin: 0 @indent-tablet;
+    margin: 0 @indent-tablet 69px @indent-tablet;
+  }
+
+  @media @desktop {
+    width: 73.4%;
+    margin: 0;
   }
 }
 
 .additional-products__title {
-  display: flex;
-  align-items: center;
-  margin: 0 0 33px @indent-mobile;
+  //position: relative;
+  margin: 0 0 34px @indent-mobile;
   font-family: @main-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: @first-line-text-color;
 
-  &::after {
-    content: "";
-    flex-grow: 1;
-    height: 3px;
-    margin-left: 20px;
-    background-color: @corporate-color;
-  }
-
   @media @tablet {
-    margin: 0 0 79px 0;
+    margin: 0 0 81px @indent-tablet;
     font-size: 36px;
     line-height: 36px;
+  }
 
-    &::after {
-      flex-grow: 13;
-      margin-left: 40px;
-    }
+  @media @desktop {
+    max-width: @desktop-wrapper;
+    margin: 0 auto 81px auto;
+  }
+}
 
-    &::before {
-      content: "";
-      flex-grow: 1;
-      height: 3px;
-      margin-right: 40px;
-      background-color: @corporate-color;
+.additional-products__title-wrapper {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 14px;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: @corporate-color;
+    z-index: -1;
+
+    @media @tablet {
+      top: 23px;
     }
+  }
+}
+
+.additional-products__text {
+  display: inline-block;
+  padding-left: @indent-mobile;
+  padding-right: 22px;
+  margin-left: -@indent-mobile;
+  background-color: @white;
+
+  @media @tablet {
+    padding-left: 40px;
+    padding-right: 42px;
+    margin-left: 0;
+  }
+
+  @media @desktop {
+    margin-left: -40px;
   }
 }

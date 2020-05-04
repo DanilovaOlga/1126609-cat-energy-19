@@ -31,10 +31,12 @@
 <main class="index-main">
   <section class="top-banner">
     <div class="top-banner__wrapper">
-      <h1 class="top-banner__title">Функциональное питание для котов</h1>
-      <p class="top-banner__slogan">Занялся собой? Займись котом!</p>
-      <img class="top-banner__img" src="https://via.placeholder.com/150x150" width="280" height="270" alt="Упаковка с кошачим кормом.">
-      <a class="top-banner__link action-button" href="form.html">Подобрать программу</a>
+      <div class="top-banner__content">
+        <h1 class="top-banner__title">Функциональное питание для котов</h1>
+        <p class="top-banner__slogan">Занялся собой? Займись котом!</p>
+        <img class="top-banner__img" src="https://via.placeholder.com/150x150" width="280" height="270" alt="Упаковка с кошачим кормом.">
+        <a class="top-banner__link action-button" href="form.html">Подобрать программу</a>
+      </div>
     </div>
   </section>
   <section class="product-groups">
@@ -77,46 +79,56 @@
     </ul>
   </section>
   <article class="demonstrating-example">
-    <h2 class="demonstrating-example__title">Живой пример</h2>
-    <p class="demonstrating-example__promo-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-    <div class="demonstrating-example__infographic-wrapper">
-      <ul class="demonstrating-example__infographic infographic">
-        <li class="infographic__item">
-          <span class="infographic__number">5 кг</span>
-          <span class="infographic__note">Снижение веса</span>
-        </li>
-        <li class="infographic__item">
-          <span class="infographic__number">60 дней</span>
-          <span class="infographic__note">Затрачено времени</span>
-        </li>
-    </ul>
-    <p class="demonstrating-example__expenses">
-      <span>Затраты на питание:</span>
-      <span>15 000 руб.</span>
-    </p>
-    </div>
-    <div class="demonstrating-example__img-wrapper">
-      <img class="demonstrating-example__img demonstrating-example__img--fat" src="https://via.placeholder.com/150x150" width="311" height="232" alt="Фотография толстого котика до питания по профессиональной программе.">
-      <img class="demonstrating-example__img demonstrating-example__img--slim" src="https://via.placeholder.com/150x150" width="311" height="232" alt="Фотография стройного котика после питания по профессиональной программе.">
-    </div>
-    <div class="demonstrating-example__slider slider">
-      <button class="slider__btn slider__btn--before" type="button">Было</button>
-      <div class="slider__scale">
-        <div class="slider__scale-toggle"></div>
+    <div class="demonstrating-example__wrapper">
+      <div class="demonstrating-example__left">
+        <h2 class="demonstrating-example__title">Живой пример</h2>
+        <p class="demonstrating-example__promo-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему
+          спит по 16 часов в&nbsp;день. </p>
+        <div class="demonstrating-example__infographic-wrapper">
+          <ul class="demonstrating-example__infographic infographic">
+            <li class="infographic__item">
+              <span class="infographic__number">5 кг</span>
+              <span class="infographic__note">Снижение веса</span>
+            </li>
+            <li class="infographic__item">
+              <span class="infographic__number">60 дней</span>
+              <span class="infographic__note">Затрачено времени</span>
+            </li>
+          </ul>
+          <p class="demonstrating-example__expenses">
+            <span class="demonstrating-example__expenses-text">Затраты на питание:</span>
+            <span class="demonstrating-example__expenses-sum">15 000 руб.</span>
+          </p>
+        </div>
       </div>
-      <button class="slider__btn slider__btn--after" type="button">Стало</button>
+      <div class="demonstrating-example__right">
+        <div class="demonstrating-example__img-wrapper">
+          <img class="demonstrating-example__img demonstrating-example__img--fat" src="https://via.placeholder.com/150x150" width="311" height="232" alt="Фотография толстого котика до питания по профессиональной программе.">
+          <img class="demonstrating-example__img demonstrating-example__img--slim" src="https://via.placeholder.com/150x150" width="311" height="232" alt="Фотография стройного котика после питания по профессиональной программе.">
+        </div>
+        <div class="demonstrating-example__slider slider">
+          <button class="slider__btn slider__btn--before" type="button">Было</button>
+          <div class="slider__scale">
+            <div class="slider__scale-toggle"></div>
+          </div>
+          <button class="slider__btn slider__btn--after" type="button">Стало</button>
+        </div>
+      </div>
     </div>
   </article>
 </main>
 <footer class="page-footer">
   <section class="page-footer__address address">
     <h2 class="visually-hidden">Адрес магазина</h2>
-    <div class="address__content address__content--index">
-      <p class="address__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-      <p class="address__location">
-        <span>ул. Большая Конюшенная, д.&nbsp;19/8</span>
-        <span>Санкт-Петербург</span>
-      </p>
+    <div class="address__content-wrapper">
+      <div class="address__content address__content--index">
+        <p class="address__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        <p class="address__location">
+          <span class="address__location-street">ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8</span>
+          <span class="address__location-city">Санкт&#8209;Петербург</span>
+        </p>
+      </div>
     </div>
     <iframe class="address__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa43a7a06bce91fcae8ae809ecf741322a6d12efb930a6abee0fa20ba36ad8c94&amp;source=constructor" width="320" height="362"></iframe>
   </section>

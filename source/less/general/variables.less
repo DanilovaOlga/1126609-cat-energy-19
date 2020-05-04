@@ -17,7 +17,8 @@
 // Значения ширин
 @mobile-width: 320px;
 @tablet-width: 768px;
-@desktop-width: 1440px;
+@desktop-width: 1300px;
+@desktop-wrapper: calc(@desktop-width - @indent-desktop * 2);
 
 // Брейкпоинты
 @tablet: ~"(min-width: @{tablet-width})";
@@ -26,7 +27,7 @@
 // Отступы
 @indent-mobile: 20px;
 @indent-tablet: 30px;
-@indent-desktop: 110px;
+@indent-desktop: 40px;
 
 // Фирменный цвет
 @corporate-color: @moderate-green;
