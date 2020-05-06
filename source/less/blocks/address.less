@@ -1,7 +1,9 @@
 .address__content-wrapper {
-  position: relative;
-  max-width: @desktop-wrapper;
-  margin: 0 auto;
+  @media @desktop {
+    position: relative;
+    max-width: @desktop-wrapper;
+    margin: 0 auto;
+  }
 }
 
 .address__content {
