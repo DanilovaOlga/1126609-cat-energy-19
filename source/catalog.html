@@ -11,8 +11,11 @@
   <nav class="main-nav" aria-label="Главное меню">
     <div class="main-nav__top-wrapper">
       <a class="main-nav__logo-link" href="index.html">
-        <img class="main-nav__logo-img" src="https://via.placeholder.com/150x150" width="191" height="39" alt="Магазин функционального питания для котов">
-      </a>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="/img/svg/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="/img/svg/logo-tablet.svg">
+          <img class="main-nav__logo-img" src="/img/svg/logo-mobile.svg" width="191" height="39" alt="Магазин функционального питания для котов.">
+        </picture>      </a>
       <button class="main-nav__btn" type="button" aria-label="Открыть меню"></button>
     </div>
     <ul class="main-nav__list main-nav__list--open">
@@ -35,7 +38,10 @@
     <ul class="catalog__list">
       <li class="catalog__item product-card" id="pro">
         <a class="product-card__img-link" href="#">
-          <img class="product-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Корм с курицей в картонной упаковке весом 500 грамм.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/catalog/tablet/chicken-small-tablet@1x.png 1x, /img/catalog/tablet/chicken-small-tablet@2x.png 2x">
+            <img class="product-card__img" src="/img/catalog/mobile/chicken-small-mobile@1x.jpg" srcset="/img/catalog/mobile/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с курицей в картонной упаковке весом 500 грамм.">
+          </picture>
         </a>
         <div class="product-card__description">
           <h3 class="product-card__title">
@@ -60,7 +66,10 @@
       </li>
       <li class="catalog__item product-card">
         <a class="product-card__img-link" href="#">
-          <img class="product-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Корм с курицей в картонной упаковке весом 1000 грамм.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/catalog/tablet/chicken-big-tablet@1x.png 1x, /img/catalog/tablet/chicken-big-tablet@2x.png 2x">
+            <img class="product-card__img" src="/img/catalog/mobile/chicken-big-mobile@1x.jpg" srcset="/img/catalog/mobile/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с курицей в картонной упаковке весом 1000 грамм.">
+          </picture>
         </a>
         <div class="product-card__description">
           <h3 class="product-card__title">
@@ -85,7 +94,10 @@
       </li>
       <li class="catalog__item product-card">
         <a class="product-card__img-link" href="#">
-          <img class="product-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Корм с рыбой в картонной упаковке весом 500 грамм.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/catalog/tablet/fish-small-tablet@1x.png 1x, /img/catalog/tablet/fish-small-tablet@2x.png 2x">
+            <img class="product-card__img" src="/img/catalog/mobile/fish-small-mobile@1x.jpg" srcset="/img/catalog/mobile/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с рыбой в картонной упаковке весом 500 грамм.">
+          </picture>
         </a>
         <div class="product-card__description">
           <h3 class="product-card__title">
@@ -110,7 +122,10 @@
       </li>
       <li class="catalog__item product-card">
         <a class="product-card__img-link" href="#">
-          <img class="product-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Корм с рыбой в картонной упаковке весом 1000 грамм.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/catalog/tablet/fish-big-tablet@1x.png 1x, /img/catalog/tablet/fish-big-tablet@2x.png 2x">
+            <img class="product-card__img" src="/img/catalog/mobile/fish-big-mobile@1x.jpg" srcset="/img/catalog/mobile/fish-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с рыбой в картонной упаковке весом 1000 грамм.">
+          </picture>
         </a>
         <div class="product-card__description">
           <h3 class="product-card__title">
@@ -135,7 +150,10 @@
       </li>
       <li class="catalog__item product-card" id="slim">
         <a class="product-card__img-link" href="#">
-          <img class="product-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Корм с гречкой в картонной упаковке весом 500 грамм.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/catalog/tablet/buckwheat-small-tablet@1x.png 1x, /img/catalog/tablet/buckwheat-small-tablet@2x.png 2x">
+            <img class="product-card__img" src="/img/catalog/mobile/buckwheat-small-mobile@1x.jpg" srcset="/img/catalog/mobile/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с гречкой в картонной упаковке весом 500 грамм.">
+          </picture>
         </a>
         <div class="product-card__description">
           <h3 class="product-card__title">
@@ -160,7 +178,10 @@
       </li>
       <li class="catalog__item product-card">
         <a class="product-card__img-link" href="#">
-          <img class="product-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Корм с гречкой в картонной упаковке весом 1000 грамм.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/catalog/tablet/buckwheat-big-tablet@1x.png 1x, /img/catalog/tablet/buckwheat-big-tablet@2x.png 2x">
+            <img class="product-card__img" src="/img/catalog/mobile/buckwheat-big-mobile@1x.jpg" srcset="/img/catalog/mobile/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с гречкой в картонной упаковке весом 1000 грамм.">
+          </picture>
         </a>
         <div class="product-card__description">
           <h3 class="product-card__title">
@@ -185,7 +206,10 @@
       </li>
       <li class="catalog__item product-card">
         <a class="product-card__img-link" href="#">
-          <img class="product-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Корм с рисом в картонной упаковке весом 500 грамм.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/catalog/tablet/rice-small-tablet@1x.png 1x, /img/catalog/tablet/rice-small-tablet@2x.png 2x">
+            <img class="product-card__img" src="/img/catalog/mobile/rice-small-mobile@1x.jpg" srcset="/img/catalog/mobile/rice-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с рисом в картонной упаковке весом 500 грамм.">
+          </picture>
         </a>
         <div class="product-card__description">
           <h3 class="product-card__title">

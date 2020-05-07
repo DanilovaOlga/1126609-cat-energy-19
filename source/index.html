@@ -11,7 +11,11 @@
   <nav class="main-nav main-nav--index" aria-label="Главное меню">
     <div class="main-nav__top-wrapper">
       <a class="main-nav__logo-link" title="Вы уже здесь">
-        <img class="main-nav__logo-img" src="https://via.placeholder.com/150x150" width="191" height="39" alt="Магазин функционального питания для котов.">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="/img/svg/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="/img/svg/logo-tablet.svg">
+          <img class="main-nav__logo-img" src="/img/svg/logo-mobile.svg" width="191" height="39" alt="Магазин функционального питания для котов.">
+        </picture>
       </a>
       <button class="main-nav__btn" type="button" aria-label="Открыть меню"></button>
     </div>
@@ -34,7 +38,13 @@
       <div class="top-banner__content">
         <h1 class="top-banner__title">Функциональное питание для котов</h1>
         <p class="top-banner__slogan">Занялся собой? Займись котом!</p>
-        <img class="top-banner__img" src="https://via.placeholder.com/150x150" width="280" height="270" alt="Упаковка с кошачим кормом.">
+        <picture class="top-banner__img-wrapper">
+          <source media="(min-width: 1300px)"
+                  srcset="/img/index/desktop/index-can-desktop@1x.png 1x, /img/index/desktop/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+                  srcset="/img/index/tablet/index-can-tablet@1x.jpg 1x, /img/index/tablet/index-can-tablet@2x.jpg 2x">
+          <img class="top-banner__img" src="/img/index/mobile/index-can-mobile@1x.png" srcset="/img/index/mobile/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка с кошачим кормом.">
+        </picture>
         <a class="top-banner__link action-button" href="form.html">Подобрать программу</a>
       </div>
     </div>
@@ -82,30 +92,45 @@
     <div class="demonstrating-example__wrapper">
       <div class="demonstrating-example__left">
         <h2 class="demonstrating-example__title">Живой пример</h2>
-        <p class="demonstrating-example__promo-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему
-          спит по 16 часов в&nbsp;день. </p>
-        <div class="demonstrating-example__infographic-wrapper">
-          <ul class="demonstrating-example__infographic infographic">
-            <li class="infographic__item">
-              <span class="infographic__number">5 кг</span>
-              <span class="infographic__note">Снижение веса</span>
-            </li>
-            <li class="infographic__item">
-              <span class="infographic__number">60 дней</span>
-              <span class="infographic__note">Затрачено времени</span>
-            </li>
-          </ul>
-          <p class="demonstrating-example__expenses">
-            <span class="demonstrating-example__expenses-text">Затраты на питание:</span>
-            <span class="demonstrating-example__expenses-sum">15 000 руб.</span>
-          </p>
+        <div class="demonstrating-example__content">
+          <p class="demonstrating-example__promo-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+            на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему
+            спит по 16 часов в&nbsp;день. </p>
+          <div class="demonstrating-example__infographic-wrapper">
+            <ul class="demonstrating-example__infographic infographic">
+              <li class="infographic__item">
+                <span class="infographic__number">5 кг</span>
+                <span class="infographic__note">Снижение веса</span>
+              </li>
+              <li class="infographic__item">
+                <span class="infographic__number">60 дней</span>
+                <span class="infographic__note">Затрачено времени</span>
+              </li>
+            </ul>
+            <p class="demonstrating-example__expenses">
+              <span class="demonstrating-example__expenses-text">Затраты на питание:</span>
+              <span class="demonstrating-example__expenses-sum">15 000 руб.</span>
+            </p>
+          </div>
         </div>
       </div>
       <div class="demonstrating-example__right">
         <div class="demonstrating-example__img-wrapper">
-          <img class="demonstrating-example__img demonstrating-example__img--fat" src="https://via.placeholder.com/150x150" width="311" height="232" alt="Фотография толстого котика до питания по профессиональной программе.">
-          <img class="demonstrating-example__img demonstrating-example__img--slim" src="https://via.placeholder.com/150x150" width="311" height="232" alt="Фотография стройного котика после питания по профессиональной программе.">
+          <picture class="demonstrating-example__picture">
+            <source media="(min-width: 1300px)"
+                    srcset="/img/index/desktop/before-desktop@1x.png 1x, /img/index/desktop/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    srcset="/img/index/tablet/before-tablet@1x.png 1x, /img/index/tablet/before-tablet@2x.png 2x">
+            <img class="demonstrating-example__img demonstrating-example__img--fat" src="/img/index/mobile/before-mobile@1x.png" srcset="/img/index/mobile/before-mobile@2x.png 2x" width="311" height="232" alt="Фотография толстого котика до питания по профессиональной программе.">
+          </picture>
+          <picture class="demonstrating-example__picture">
+            <source media="(min-width: 1300px)"
+                    srcset="/img/index/desktop/after-desktop@1x.png 1x, /img/index/desktop/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    srcset="/img/index/tablet/after-tablet@1x.png 1x, /img/index/tablet/after-tablet@2x.png 2x">
+            <img class="demonstrating-example__img demonstrating-example__img--slim" src="/img/index/mobile/after-mobile@1x.png" srcset="/img/index/mobile/after-mobile@2x.png 2x" width="311" height="232" alt="Фотография стройного котика после питания по профессиональной программе.">
+          </picture>
         </div>
         <div class="demonstrating-example__slider slider">
           <button class="slider__btn slider__btn--before" type="button">Было</button>
@@ -130,7 +155,9 @@
         </p>
       </div>
     </div>
-    <iframe class="address__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa43a7a06bce91fcae8ae809ecf741322a6d12efb930a6abee0fa20ba36ad8c94&amp;source=constructor" width="320" height="362"></iframe>
+    <iframe class="address__map"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa43a7a06bce91fcae8ae809ecf741322a6d12efb930a6abee0fa20ba36ad8c94&amp;source=constructor"
+            width="320" height="362"></iframe>
   </section>
   <div class="page-footer__bottom-block">
     <a class="page-footer__logo-link" title="Вы уже здесь">
