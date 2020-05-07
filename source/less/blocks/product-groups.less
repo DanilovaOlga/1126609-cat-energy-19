@@ -22,6 +22,8 @@
 }
 
 .product-groups__item {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   margin-bottom: 20px;
   background-color: @product-groups-bg-color;
@@ -239,7 +241,9 @@
 }
 
 .product-groups__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
   font-family: @main-font;
   font-size: 16px;
   line-height: 16px;
@@ -249,5 +253,22 @@
   @media @tablet {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  &::after {
+    content: "";
+    width: 25px;
+    height: 12px;
+    margin-left: 11px;
+    background: url("/img/svg/icon-right-arrow-long.svg") no-repeat;
+  }
+
+  &:hover::after {
+    width: 34px;
+    background: url("/img/svg/icon-right-arrow-verylong.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
