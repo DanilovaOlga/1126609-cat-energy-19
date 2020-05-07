@@ -302,10 +302,51 @@
         height: 40px;
       }
     }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:hover::before {
+      border-color: #bababa;
+    }
   }
 
   &--radio + .form__label::before {
     border-radius: 50%;
+  }
+
+  &--radio:checked + .form__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 9px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: @corporate-color;
+
+    @media @tablet {
+      width: 18px;
+      height: 18px;
+      left: 11px;
+    }
+  }
+
+  &--checkbox:checked + .form__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    width: 22px;
+    height: 17px;
+    background: url("/img/svg/icon-tick.svg") no-repeat;
+
+    @media @tablet {
+      left: 9px;
+    }
   }
 }
 
