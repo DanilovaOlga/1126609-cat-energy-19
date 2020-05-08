@@ -14,6 +14,10 @@
     @media @desktop {
       color: @white;
     }
+
+    &::after {
+      background-color: @white;
+    }
   }
 }
 
@@ -26,6 +30,17 @@
   @media @tablet {
     padding: 0;
     flex-shrink: 0;
+  }
+}
+
+.main-nav__logo-link {
+  &:hover:not([title]),
+  &:focus:not([title]) {
+    opacity: 0.8;
+  }
+
+  &:active:not([title]) {
+    opacity: 0.6;
   }
 }
 
@@ -73,9 +88,17 @@
 }
 
 .main-nav__item {
-  &:last-child .main-nav__link {
+  @media @tablet {
+    margin-right: 36px;
+  }
+
+  @media @desktop {
+    margin-right: 35px;
+  }
+
+  &:last-child {
     @media @tablet {
-      padding-right: 0;
+      margin-right: 0;
     }
   }
 }
@@ -93,7 +116,7 @@
   text-align: center;
 
   @media @tablet {
-    padding: 0 18px;
+    padding: 15px 0 15px 0;
     border: none;
     font-weight: 400;
     font-size: 18px;
@@ -102,7 +125,35 @@
   }
 
   @media @desktop {
-    padding: 0 17px;
+    padding: 15px 0 15px 0;
     font-size: 20px;
+  }
+
+  &:hover:not([title]),
+  &:focus:not([title]) {
+    opacity: 0.6;
+  }
+
+  &:active:not([title]) {
+    opacity: 0.3;
+  }
+
+  &--current {
+    @media @tablet {
+      position: relative;
+    }
+
+    &::after {
+      @media @tablet {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: @corporate-color;
+      }
+    }
   }
 }

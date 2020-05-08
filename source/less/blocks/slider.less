@@ -58,6 +58,20 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   }
 
+  &:hover,
+  &:focus {
+    @media @tablet {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &:active {
+    @media @tablet {
+      border: 2px solid @corporate-color;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
   &::before {
     @media @tablet {
       content: "";
@@ -81,8 +95,35 @@
   color: @first-line-text-color;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 
   @media @tablet {
+    position: relative;
     font-size: 20px;
+  }
+
+  &::after {
+    @media @tablet {
+      position: absolute;
+      content: "";
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      border-bottom: 1px dotted @mostly-black;
+      opacity: 0.23;
+    }
+  }
+
+  &:hover::after,
+  &:focus::after {
+    @media @tablet {
+      border-bottom-style: solid;
+      opacity: 0.4;
+    }
+  }
+
+  &:active::after {
+    border: none;
   }
 }
