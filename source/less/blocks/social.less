@@ -2,7 +2,7 @@
   .clean-list();
   display: flex;
   justify-content: center;
-  padding: 21px 0 18px 0;
+  padding: 23px 0 20px 0;
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
 
@@ -13,18 +13,69 @@
 }
 
 .social__item {
-  width: 24px;
-  height: 24px;
-  margin-right: 32px;
-  border: 1px solid lightblue; //временно для сетки
+  display: flex;
+  align-items: center;
+  margin-right: 33px;
 
   &:last-child {
     margin-right: 0;
   }
 
   @media @tablet {
+    margin-right: 26px;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+
+  @media @tablet {
     width: 30px;
-    height: 30px;
-    margin-right: 28px;
+  }
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: @corporate-color;
+  }
+
+  &:active .social__icon {
+    fill-opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: #666666;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+
+    @media @tablet {
+      width: 30px;
+      height: 16px;
+    }
+  }
+
+  &--ig {
+    width: 17px;
+    height: 17px;
+
+    @media @tablet {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+
+    @media @tablet {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

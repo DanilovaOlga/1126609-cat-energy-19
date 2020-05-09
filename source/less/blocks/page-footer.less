@@ -28,7 +28,17 @@
   margin: 39px 0 31px 0;
 
   @media @tablet {
+    width: 23%;
     margin: 0;
+  }
+
+  &:hover:not([title]),
+  &:focus:not([title]) {
+    opacity: 0.8;
+  }
+
+  &:active:not[title] {
+    opacity: 0.6;
   }
 }
 
@@ -36,4 +46,16 @@
   display: block;
   width: 128px;
   height: 24px;
+}
+
+.page-footer__social {
+  @media @tablet {
+    width: 23%;
+  }
+}
+
+.page-footer__developer {
+  @media @tablet {
+    width: 23%;
+  }
 }
