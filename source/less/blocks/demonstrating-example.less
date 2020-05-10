@@ -164,11 +164,12 @@
 }
 
 .demonstrating-example__img-wrapper {
-  position: relative;
-  min-height: 240px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 33px;
 
   @media @tablet {
+    position: relative;
     align-self: center;
     min-height: 517px;
     width: 690px;
@@ -186,12 +187,12 @@
 }
 
 .demonstrating-example__img {
-  position: absolute;
   display: block;
   width: 320px;
   margin: 0 auto;
 
   @media @tablet {
+    position: absolute;
     width: 690px;
   }
 

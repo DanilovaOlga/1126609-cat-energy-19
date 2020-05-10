@@ -34,19 +34,19 @@
       background-size: 245px auto;
     }
   }
+}
 
-  &::before {
-    content: "";
-    flex-basis: 50%;
-    padding-top: 65px;
+.promo-block__gift {
+  flex-basis: 50%;
+  background: url("/img/svg/icon-gift.svg") no-repeat 50% 77%;
+  background-size: 56px 61px;
 
-    @media @tablet {
-      padding-left: 91px;
-    }
+  @media @tablet {
+    background-position: 30.5% 47%;
+  }
 
-    @media @desktop {
-      padding-left: 0;
-    }
+  @media @desktop {
+    background-position: 51% 78%;
   }
 }
 

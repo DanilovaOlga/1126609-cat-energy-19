@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat energy — Функциональное питание для котов</title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="/js/picturefill.min.js"></script>
+  <script src="/js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </head>
 <body>
 <header class="page-header">
@@ -21,7 +24,7 @@
     </div>
     <ul class="main-nav__list main-nav__list--open">
       <li class="main-nav__item">
-        <a class="main-nav__link" title="Вы уже здесь">Главная</a>
+        <a class="main-nav__link main-nav__link--current" title="Вы уже здесь">Главная</a>
       </li>
       <li class="main-nav__item">
         <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -161,22 +164,38 @@
   </section>
   <div class="page-footer__bottom-block">
     <a class="page-footer__logo-link" title="Вы уже здесь">
-      <img class="page-footer__logo-img" src="https://via.placeholder.com/150x150" width="128" height="24" alt="Магазин функционального питания для котов.">
+      <img class="page-footer__logo-img" src="/img/svg/logo-footer.svg" width="128" height="24" alt="Магазин функционального питания для котов.">
     </a>
     <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link social__link--vk" href="#" aria-label="В контакте"></a>
+      <li class="social__item social__item--vk">
+        <a class="social__link social__link--vk" href="#" aria-label="В контакте">
+          <svg class="social__icon social__icon--vk" viewBox="0 0 22 12">
+            <use xlink:href="/img/svg/sprite.svg#icon-vk"></use>
+          </svg>
+        </a>
       </li>
-      <li class="social__item">
-        <a class="social__link social__link--ig" href="#" aria-label="Instagram"></a>
+      <li class="social__item social__item--ig">
+        <a class="social__link social__link--ig" href="#" aria-label="Instagram">
+          <svg class="social__icon social__icon--ig" viewBox="0 0 17 17">
+            <use xlink:href="/img/svg/sprite.svg#icon-insta"></use>
+          </svg>
+        </a>
       </li>
-      <li class="social__item">
-        <a class="social__link social__link--fb" href="#" aria-label="Facebook"></a>
+      <li class="social__item social__item--fb">
+        <a class="social__link social__link--fb" href="#" aria-label="Facebook">
+          <svg class="social__icon social__icon--fb" viewBox="0 0 10 19">
+            <use xlink:href="/img/svg/sprite.svg#icon-fb"></use>
+          </svg>
+        </a>
       </li>
     </ul>
     <p class="page-footer__developer developer">
-      <a class="developer__link developer__link--text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="developer__link developer__link--logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      <a class="developer__link developer__link--text" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
+      <a class="developer__link developer__link--logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="developer__icon" viewBox="0 0 27 34">
+          <use xlink:href="/img/svg/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
     </p>
   </div>
 </footer>

@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat energy — Каталог продукции</title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="/js/picturefill.min.js"></script>
+  <script src="/js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </head>
 <body>
 <header class="page-header">
@@ -23,7 +26,7 @@
         <a class="main-nav__link" href="index.html">Главная</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" title="Вы уже здесь">Каталог продукции</a>
+        <a class="main-nav__link main-nav__link--current" title="Вы уже здесь">Каталог продукции</a>
       </li>
       <li class="main-nav__item">
         <a class="main-nav__link" href="form.html">Подбор программы</a>
@@ -39,6 +42,7 @@
       <li class="catalog__item product-card" id="pro">
         <a class="product-card__img-link" href="#">
           <picture>
+            <source media="(min-width: 1300px)" srcset="/img/catalog/desktop/chicken-small-desktop@1x.png 1x, /img/catalog/tablet/chicken-small-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="/img/catalog/tablet/chicken-small-tablet@1x.png 1x, /img/catalog/tablet/chicken-small-tablet@2x.png 2x">
             <img class="product-card__img" src="/img/catalog/mobile/chicken-small-mobile@1x.jpg" srcset="/img/catalog/mobile/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с курицей в картонной упаковке весом 500 грамм.">
           </picture>
@@ -49,16 +53,16 @@
           </h3>
           <table class="product-specification">
             <tr class="product-specification__row">
-              <th class="product-specification__title">Объем</th>
-              <td class="product-specification__value">500 г</td>
+              <th class="product-specification__title"><span>Объем</span></th>
+              <td class="product-specification__value"><span>500&nbsp;г</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Вкус</th>
-              <td class="product-specification__value">Курица</td>
+              <th class="product-specification__title"><span>Вкус</span></th>
+              <td class="product-specification__value"><span>Курица</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Цена</th>
-              <td class="product-specification__value">700 Р.</td>
+              <th class="product-specification__title"><span>Цена</span></th>
+              <td class="product-specification__value"><span>700&nbsp;Р.</span></td>
             </tr>
           </table>
         </div>
@@ -67,6 +71,7 @@
       <li class="catalog__item product-card">
         <a class="product-card__img-link" href="#">
           <picture>
+            <source media="(min-width: 1300px)" srcset="/img/catalog/desktop/chicken-big-desktop@1x.png 1x, /img/catalog/desktop/chicken-big-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="/img/catalog/tablet/chicken-big-tablet@1x.png 1x, /img/catalog/tablet/chicken-big-tablet@2x.png 2x">
             <img class="product-card__img" src="/img/catalog/mobile/chicken-big-mobile@1x.jpg" srcset="/img/catalog/mobile/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с курицей в картонной упаковке весом 1000 грамм.">
           </picture>
@@ -77,16 +82,16 @@
           </h3>
           <table class="product-specification">
             <tr class="product-specification__row">
-              <th class="product-specification__title">Объем</th>
-              <td class="product-specification__value">1000 г</td>
+              <th class="product-specification__title"><span>Объем</span></th>
+              <td class="product-specification__value"><span>1000&nbsp;г</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Вкус</th>
-              <td class="product-specification__value">Курица</td>
+              <th class="product-specification__title"><span>Вкус</span></th>
+              <td class="product-specification__value"><span>Курица</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Цена</th>
-              <td class="product-specification__value">1000 Р.</td>
+              <th class="product-specification__title"><span>Цена</span></th>
+              <td class="product-specification__value"><span>1000&nbsp;Р.</span></td>
             </tr>
           </table>
         </div>
@@ -95,6 +100,7 @@
       <li class="catalog__item product-card">
         <a class="product-card__img-link" href="#">
           <picture>
+            <source media="(min-width: 1300px)" srcset="/img/catalog/desktop/fish-small-desktop@1x.png 1x, /img/catalog/desktop/fish-small-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="/img/catalog/tablet/fish-small-tablet@1x.png 1x, /img/catalog/tablet/fish-small-tablet@2x.png 2x">
             <img class="product-card__img" src="/img/catalog/mobile/fish-small-mobile@1x.jpg" srcset="/img/catalog/mobile/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с рыбой в картонной упаковке весом 500 грамм.">
           </picture>
@@ -105,16 +111,16 @@
           </h3>
           <table class="product-specification">
             <tr class="product-specification__row">
-              <th class="product-specification__title">Объем</th>
-              <td class="product-specification__value">500 г</td>
+              <th class="product-specification__title"><span>Объем</span></th>
+              <td class="product-specification__value"><span>500&nbsp;г</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Вкус</th>
-              <td class="product-specification__value">Рыба</td>
+              <th class="product-specification__title"><span>Вкус</span></th>
+              <td class="product-specification__value"><span>Рыба</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Цена</th>
-              <td class="product-specification__value">700 Р.</td>
+              <th class="product-specification__title"><span>Цена</span></th>
+              <td class="product-specification__value"><span>700&nbsp;Р.</span></td>
             </tr>
           </table>
         </div>
@@ -123,6 +129,7 @@
       <li class="catalog__item product-card">
         <a class="product-card__img-link" href="#">
           <picture>
+            <source media="(min-width: 1300px)" srcset="/img/catalog/desktop/fish-big-desktop@1x.png 1x, /img/catalog/desktop/fish-big-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="/img/catalog/tablet/fish-big-tablet@1x.png 1x, /img/catalog/tablet/fish-big-tablet@2x.png 2x">
             <img class="product-card__img" src="/img/catalog/mobile/fish-big-mobile@1x.jpg" srcset="/img/catalog/mobile/fish-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с рыбой в картонной упаковке весом 1000 грамм.">
           </picture>
@@ -133,16 +140,16 @@
           </h3>
           <table class="product-specification">
             <tr class="product-specification__row">
-              <th class="product-specification__title">Объем</th>
-              <td class="product-specification__value">1000 г</td>
+              <th class="product-specification__title"><span>Объем</span></th>
+              <td class="product-specification__value"><span>1000&nbsp;г</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Вкус</th>
-              <td class="product-specification__value">Рыба</td>
+              <th class="product-specification__title"><span>Вкус</span></th>
+              <td class="product-specification__value"><span>Рыба</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Цена</th>
-              <td class="product-specification__value">1000 Р.</td>
+              <th class="product-specification__title"><span>Цена</span></th>
+              <td class="product-specification__value"><span>1000&nbsp;Р.</span></td>
             </tr>
           </table>
         </div>
@@ -151,6 +158,7 @@
       <li class="catalog__item product-card" id="slim">
         <a class="product-card__img-link" href="#">
           <picture>
+            <source media="(min-width: 1300px)" srcset="/img/catalog/desktop/buckwheat-small-desktop@1x.png 1x, /img/catalog/desktop/buckwheat-small-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="/img/catalog/tablet/buckwheat-small-tablet@1x.png 1x, /img/catalog/tablet/buckwheat-small-tablet@2x.png 2x">
             <img class="product-card__img" src="/img/catalog/mobile/buckwheat-small-mobile@1x.jpg" srcset="/img/catalog/mobile/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с гречкой в картонной упаковке весом 500 грамм.">
           </picture>
@@ -161,16 +169,16 @@
           </h3>
           <table class="product-specification">
             <tr class="product-specification__row">
-              <th class="product-specification__title">Объем</th>
-              <td class="product-specification__value">500 г</td>
+              <th class="product-specification__title"><span>Объем</span></th>
+              <td class="product-specification__value"><span>500&nbsp;г</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Вкус</th>
-              <td class="product-specification__value">Гречка</td>
+              <th class="product-specification__title"><span>Вкус</span></th>
+              <td class="product-specification__value"><span>Гречка</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Цена</th>
-              <td class="product-specification__value">400 Р.</td>
+              <th class="product-specification__title"><span>Цена</span></th>
+              <td class="product-specification__value"><span>400&nbsp;Р.</span></td>
             </tr>
           </table>
         </div>
@@ -179,6 +187,7 @@
       <li class="catalog__item product-card">
         <a class="product-card__img-link" href="#">
           <picture>
+            <source media="(min-width: 1300px)" srcset="/img/catalog/desktop/buckwheat-big-desktop@1x.png 1x, /img/catalog/desktop/buckwheat-big-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="/img/catalog/tablet/buckwheat-big-tablet@1x.png 1x, /img/catalog/tablet/buckwheat-big-tablet@2x.png 2x">
             <img class="product-card__img" src="/img/catalog/mobile/buckwheat-big-mobile@1x.jpg" srcset="/img/catalog/mobile/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с гречкой в картонной упаковке весом 1000 грамм.">
           </picture>
@@ -189,16 +198,16 @@
           </h3>
           <table class="product-specification">
             <tr class="product-specification__row">
-              <th class="product-specification__title">Объем</th>
-              <td class="product-specification__value">1000 г</td>
+              <th class="product-specification__title"><span>Объем</span></th>
+              <td class="product-specification__value"><span>1000&nbsp;г</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Вкус</th>
-              <td class="product-specification__value">Гречка</td>
+              <th class="product-specification__title"><span>Вкус</span></th>
+              <td class="product-specification__value"><span>Гречка</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Цена</th>
-              <td class="product-specification__value">700 Р.</td>
+              <th class="product-specification__title"><span>Цена</span></th>
+              <td class="product-specification__value"><span>700&nbsp;Р.</span></td>
             </tr>
           </table>
         </div>
@@ -207,6 +216,7 @@
       <li class="catalog__item product-card">
         <a class="product-card__img-link" href="#">
           <picture>
+            <source media="(min-width: 1300px)" srcset="/img/catalog/desktop/rice-small-desktop@1x.png 1x, /img/catalog/desktop/rice-small-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="/img/catalog/tablet/rice-small-tablet@1x.png 1x, /img/catalog/tablet/rice-small-tablet@2x.png 2x">
             <img class="product-card__img" src="/img/catalog/mobile/rice-small-mobile@1x.jpg" srcset="/img/catalog/mobile/rice-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм с рисом в картонной упаковке весом 500 грамм.">
           </picture>
@@ -217,16 +227,16 @@
           </h3>
           <table class="product-specification">
             <tr class="product-specification__row">
-              <th class="product-specification__title">Объем</th>
-              <td class="product-specification__value">500 г</td>
+              <th class="product-specification__title"><span>Объем</span></th>
+              <td class="product-specification__value"><span>500&nbsp;г</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Вкус</th>
-              <td class="product-specification__value">Рис</td>
+              <th class="product-specification__title"><span>Вкус</span></th>
+              <td class="product-specification__value"><span>Рис</span></td>
             </tr>
             <tr class="product-specification__row">
-              <th class="product-specification__title">Цена</th>
-              <td class="product-specification__value">500 Р.</td>
+              <th class="product-specification__title"><span>Цена</span></th>
+              <td class="product-specification__value"><span>500&nbsp;Р.</span></td>
             </tr>
           </table>
         </div>
@@ -252,8 +262,8 @@
         <li class="additional-products__item additional-product-card">
           <h3 class="additional-product-card__title">Сахарозаменитель</h3>
           <p class="additional-product-card__content">
-            <span class="additional-product-card__unit">1 упаковка (100 г)</span>
-            <span class="additional-product-card__price">200 р.</span>
+            <span class="additional-product-card__unit">1 упаковка (100&nbsp;г)</span>
+            <span class="additional-product-card__price">200&nbsp;р.</span>
           </p>
           <a class="additional-product-card__order action-button" href="#">Заказать</a>
         </li>
@@ -261,7 +271,7 @@
           <h3 class="additional-product-card__title">Питьевая вода</h3>
           <p class="additional-product-card__content">
             <span class="additional-product-card__unit">5 литров</span>
-            <span class="additional-product-card__price">50 р.</span>
+            <span class="additional-product-card__price">50&nbsp;р.</span>
           </p>
           <a class="additional-product-card__order action-button" href="#">Заказать</a>
         </li>
@@ -269,20 +279,21 @@
           <h3 class="additional-product-card__title">Молоко</h3>
           <p class="additional-product-card__content">
             <span class="additional-product-card__unit">1 литр</span>
-            <span class="additional-product-card__price">100 р.</span>
+            <span class="additional-product-card__price">100&nbsp;р.</span>
           </p>
           <a class="additional-product-card__order action-button" href="#">Заказать</a>
         </li>
         <li class="additional-products__item additional-product-card">
           <h3 class="additional-product-card__title">Витамины</h3>
           <p class="additional-product-card__content">
-            <span class="additional-product-card__unit">1 упаковка (30 г)</span>
-            <span class="additional-product-card__price">300 р.</span>
+            <span class="additional-product-card__unit">1 упаковка (30&nbsp;г)</span>
+            <span class="additional-product-card__price">300&nbsp;р.</span>
           </p>
           <a class="additional-product-card__order action-button" href="#">Заказать</a>
         </li>
       </ul>
       <div class="promo-block">
+        <div class="promo-block__gift"></div>
         <p class="promo-block__text">Закажите все и&nbsp;получите чехол&nbsp;для кота в подарок!</p>
       </div>
     </div>
@@ -306,22 +317,38 @@
   </section>
   <div class="page-footer__bottom-block">
     <a class="page-footer__logo-link" href="index.html">
-      <img class="page-footer__logo-img" src="https://via.placeholder.com/150x150" width="128" height="24" alt="Магазин функционального питания для котов.">
+      <img class="page-footer__logo-img" src="/img/svg/logo-footer.svg" width="128" height="24" alt="Магазин функционального питания для котов.">
     </a>
     <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link social__link--vk" href="#" aria-label="В контакте"></a>
+      <li class="social__item social__item--vk">
+        <a class="social__link social__link--vk" href="#" aria-label="В контакте">
+          <svg class="social__icon social__icon--vk" viewBox="0 0 22 12">
+            <use xlink:href="/img/svg/sprite.svg#icon-vk"></use>
+          </svg>
+        </a>
       </li>
-      <li class="social__item">
-        <a class="social__link social__link--ig" href="#" aria-label="Instagram"></a>
+      <li class="social__item social__item--ig">
+        <a class="social__link social__link--ig" href="#" aria-label="Instagram">
+          <svg class="social__icon social__icon--ig" viewBox="0 0 17 17">
+            <use xlink:href="/img/svg/sprite.svg#icon-insta"></use>
+          </svg>
+        </a>
       </li>
-      <li class="social__item">
-        <a class="social__link social__link--fb" href="#" aria-label="Facebook"></a>
+      <li class="social__item social__item--fb">
+        <a class="social__link social__link--fb" href="#" aria-label="Facebook">
+          <svg class="social__icon social__icon--fb" viewBox="0 0 10 19">
+            <use xlink:href="/img/svg/sprite.svg#icon-fb"></use>
+          </svg>
+        </a>
       </li>
     </ul>
     <p class="page-footer__developer developer">
-      <a class="developer__link developer__link--text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="developer__link developer__link--logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
+      <a class="developer__link developer__link--text" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
+      <a class="developer__link developer__link--logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="developer__icon" viewBox="0 0 27 34">
+          <use xlink:href="/img/svg/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
     </p>
   </div>
 </footer>

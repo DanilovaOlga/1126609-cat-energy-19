@@ -11,25 +11,48 @@
 }
 
 .developer__link {
+  display: block;
+  line-height: 0;
+
+  @media @tablet {
+    margin-right: 23px;
+  }
+
+  &:last-child {
+    @media @tablet {
+      margin-right: 0;
+    }
+  }
+
   &--text {
     font-family: @complementary-font;
     font-size: 16px;
     line-height: 16px;
     color: @second-line-text-color;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--logo {
     display: block;
     width: 27px;
     height: 34px;
-    background-color: lightblue;
-  }
 
-  @media @tablet {
-    margin-right: 23px;
+    &:hover .developer__icon,
+    &:focus .developer__icon {
+      fill: @corporate-color;
+    }
 
-    &:last-child {
-      margin-right: 0;
+    &:active .developer__icon {
+      fill-opacity: 0.3;
     }
   }
+}
+
+.developer__icon {
+  width: 27px;
+  height: 34px;
+  fill: #666666;
 }
