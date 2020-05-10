@@ -14,9 +14,6 @@
 
 .product-specification__row {
   @media @tablet {
-    display: flex;
-    justify-content: space-between;
-    padding: 7px 0;
     border-bottom: 1px solid #cecece;
   }
 }
@@ -28,8 +25,23 @@
 
 .product-specification__title {
   font-weight: 400;
+  text-align: left;
+
+  & span {
+    @media @tablet {
+      display: block;
+      padding: 7px 0;
+    }
+  }
 }
 
 .product-specification__value {
   text-align: right;
+
+  & span {
+    @media @tablet {
+      display: block;
+      padding: 7px 0;
+    }
+  }
 }
