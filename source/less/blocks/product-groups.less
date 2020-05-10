@@ -241,8 +241,7 @@
 }
 
 .product-groups__link {
-  display: flex;
-  align-items: center;
+  position: relative;
   align-self: flex-start;
   font-family: @main-font;
   font-size: 16px;
@@ -256,6 +255,10 @@
   }
 
   &::after {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
     content: "";
     width: 25px;
     height: 12px;
