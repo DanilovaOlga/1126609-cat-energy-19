@@ -16,7 +16,13 @@
     }
 
     &::after {
-      background-color: @white;
+      @media @tablet {
+        background-color: @corporate-color;
+      }
+
+      @media @desktop {
+        background-color: @white;
+      }
     }
   }
 }
@@ -141,6 +147,7 @@
   &--current {
     @media @tablet {
       position: relative;
+      overflow: hidden;
     }
 
     &::after {
