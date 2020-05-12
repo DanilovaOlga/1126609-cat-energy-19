@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat energy — Подбор программы</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <script src="/js/picturefill.min.js"></script>
   <script src="/js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
 </head>
 <body>
 <header class="page-header">
-  <nav class="main-nav" aria-label="Главное меню">
+  <nav class="main-nav main-nav--closed main-nav--nojs" aria-label="Главное меню">
     <div class="main-nav__top-wrapper">
       <a class="main-nav__logo-link" href="index.html">
         <picture>
@@ -22,7 +22,7 @@
       </a>
       <button class="main-nav__btn" type="button" aria-label="Открыть меню"></button>
     </div>
-    <ul class="main-nav__list main-nav__list--open">
+    <ul class="main-nav__list">
       <li class="main-nav__item">
         <a class="main-nav__link" href="index.html">Главная</a>
       </li>
@@ -185,5 +185,6 @@
     </p>
   </div>
 </footer>
+<script src="/js/menu.js"></script>
 </body>
 </html>
