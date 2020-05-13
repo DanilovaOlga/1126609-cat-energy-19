@@ -15,7 +15,7 @@
 .social__item {
   display: flex;
   align-items: center;
-  margin-right: 33px;
+  margin-right: 32px;
 
   &:last-child {
     margin-right: 0;
@@ -43,6 +43,12 @@
 
   &:active .social__icon {
     fill-opacity: 0.3;
+  }
+
+  &--fb {
+    @media @tablet {
+      justify-content: flex-start;
+    }
   }
 }
 
