@@ -17,7 +17,7 @@
   border: 0;
 
   @media @tablet {
-    padding: 36px 70px;
+    padding: 36px 67px 36px 70px;
   }
 
   @media @desktop {
@@ -192,6 +192,8 @@
   }
 
   &--additionally {
+    margin-bottom: 22px;
+
     @media @tablet {
       margin-bottom: 24px;
     }
@@ -226,7 +228,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @media @tablet {
     width: 100%;
@@ -251,11 +253,28 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  &--email {
+    margin-right: 10px;
+
+    @media @tablet {
+      margin-right: 18px;
+    }
+  }
+
+  &--phone {
+    margin-right: 8px;
+
+    @media @tablet {
+      margin-right: 13px;
+    }
+  }
 }
 
 .form__input-text {
   min-width: 0;
   width: 100%;
+  height: 45px;
   padding: 12px 16px;
   border: 1px solid @light-gray-border;
   border-radius: 0;
@@ -267,6 +286,7 @@
   background-color: @white;
 
   @media @tablet {
+    height: 52px;
     padding: 15px 20px;
     font-size: 20px;
     line-height: 20px;
@@ -297,6 +317,18 @@
 
   &:focus + .form__icon {
     fill: @corporate-color;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: @dark-gray;
+    opacity: 1;
+
+    @media @tablet {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -383,6 +415,10 @@
   top: 50%;
   transform: translateY(-50%);
   right: 14px;
+
+  @media @tablet {
+    right: 17px;
+  }
 
   @media @desktop {
     right: 19px;
