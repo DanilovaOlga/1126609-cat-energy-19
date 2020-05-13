@@ -1,5 +1,5 @@
 .product-groups {
-  margin: 0 @indent-mobile 18px @indent-mobile;
+  margin: 0 @indent-mobile 17px @indent-mobile;
 
   @media @tablet {
     margin: 0 @indent-tablet 44px @indent-tablet;
@@ -264,6 +264,10 @@
     height: 12px;
     margin-left: 11px;
     background: url("/img/svg/icon-right-arrow-long.svg") no-repeat;
+
+    @media @tablet {
+      margin-left: 23px;
+    }
   }
 
   &:hover::after {

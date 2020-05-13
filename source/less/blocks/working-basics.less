@@ -27,9 +27,11 @@
 
 .working-basics__list {
   .clean-list();
+  display: flex;
+  flex-direction: column;
 
   @media @tablet {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     counter-reset: item;
@@ -47,6 +49,10 @@
   font-size: 14px;
   line-height: 18px;
   color: @second-line-text-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media @tablet {
     align-items: flex-start;
