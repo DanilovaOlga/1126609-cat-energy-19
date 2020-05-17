@@ -185,7 +185,8 @@
   &--slim::after {
     position: absolute;
     content: "";
-    top: 3px;
+    top: 50%;
+    transform: translateY(-58%);
     left: 10px;
     width: 35px;
     height: 49px;
@@ -197,7 +198,6 @@
 
     @media @desktop {
       display: block;
-      top: -5px;
       left: 14px;
       width: 71px;
       height: 97px;
@@ -207,7 +207,9 @@
   &--pro::after {
     position: absolute;
     content: "";
-    top: 16px;
+    top: 50%;
+    transform: translateY(-48%);
+    //top: 16px;
     left: -7px;
     width: 67px;
     height: 28px;
@@ -219,7 +221,7 @@
 
     @media @desktop {
       display: block;
-      top: 23px;
+      //top: 23px;
       left: -18px;
       width: 134px;
       height: 57px;
