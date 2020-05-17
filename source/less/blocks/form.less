@@ -363,12 +363,30 @@
       }
     }
 
-    &:active {
-      opacity: 0.3;
-    }
-
     &:hover::before {
       border-color: #bababa;
+    }
+  }
+
+  &:focus + .form__label::before {
+    border-color: #bababa;
+  }
+
+  &:active + .form__label {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    & + .form__label {
+      opacity: 0.5;
+    }
+
+    & + .form__label:hover::before {
+      border-color: @light-gray;
+    }
+
+    & + .form__label:active {
+      opacity: 0.5;
     }
   }
 
@@ -443,6 +461,10 @@
     padding: 10px 17px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:focus {
+    outline: 2px solid @dark-gray;
   }
 }
 
