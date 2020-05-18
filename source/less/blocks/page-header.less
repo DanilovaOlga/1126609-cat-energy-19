@@ -7,9 +7,10 @@
   }
 
   @media @desktop {
-    position: relative;
-    z-index: 2;
-    max-width: @desktop-wrapper;
-    margin: 0 auto;
+    margin-bottom: 0;
+
+    &--index {
+      background-image: linear-gradient(to right, #ffffff 50%, @bg-image-color 50%);
+    }
   }
 }
