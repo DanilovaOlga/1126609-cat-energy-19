@@ -102,35 +102,39 @@
 
   &--additionally {
     @media @tablet {
-      margin-bottom: 20px;
+      margin-bottom: 4px;
     }
 
     @media @desktop {
-      margin-bottom: 28px;
+      margin-bottom: 13px;
     }
 
     & .form__field-wrapper {
       @media @tablet {
         width: 45%;
-        margin-bottom: 32px;
+        padding: 16px 0;
+        margin-bottom: 0;
         margin-right: 60px;
       }
 
       @media @desktop {
-        width: calc(25% - 60px);
-        margin: 0;
+        width: 20.08%;
+        margin-right: 80px;
       }
 
       &:nth-child(2n) {
         @media @tablet {
           margin-right: 0;
         }
+
+        @media @desktop {
+          margin-right: 80px;
+        }
       }
 
-      &:nth-last-child(1),
-      &:nth-last-child(2) {
-        @media @tablet {
-          margin-bottom: 0;
+      &:nth-child(4n) {
+        @media @desktop {
+          margin-right: 0;
         }
       }
     }
@@ -148,7 +152,6 @@
   }
 
   @media @desktop {
-    justify-content: space-between;
     width: 100%;
   }
 }
@@ -195,11 +198,7 @@
     margin-bottom: 22px;
 
     @media @tablet {
-      margin-bottom: 24px;
-    }
-
-    @media @desktop {
-      margin-bottom: 25px;
+      margin-bottom: 8px;
     }
   }
 }
