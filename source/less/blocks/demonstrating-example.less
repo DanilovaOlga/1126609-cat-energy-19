@@ -61,26 +61,36 @@
 
   @media @desktop {
     width: 36%;
-    padding: 66px 0 0 0;
+    padding: 66px 0;
   }
 }
 
 .demonstrating-example__right {
   @media @tablet {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 66px;
     background-image:
       linear-gradient(to bottom, @white 169px, transparent 169px),
       linear-gradient(to right, @very-light-gray 50%, #ebebeb 50%);
   }
 
   @media @desktop {
+    display: flex;
+    flex-direction: column-reverse;
     width: 53%;
-    padding-top: 12px;
     background-image:
       linear-gradient(to bottom, @white 202px, transparent 202px),
       linear-gradient(to right, @very-light-gray calc(50% + 40px), #ebebeb calc(50% + 40px));
+  }
+}
+
+.demonstrating-example__right-wrapper {
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 66px;
+  }
+
+  @media @desktop {
+    padding-top: 12px;
   }
 }
 
