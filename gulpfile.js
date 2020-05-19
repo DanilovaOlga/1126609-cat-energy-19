@@ -11,6 +11,7 @@ var csso = require("gulp-csso");
 var cleanCSS = require("gulp-clean-css");
 var del = require("del");
 var server = require("browser-sync").create();
+var webp = require("gulp-webp");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -37,6 +38,12 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"));
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
@@ -60,5 +67,5 @@ gulp.task("refresh", function (done) {
 });
 
 
-gulp.task("build", gulp.series("clean", "copy", "css"));
+gulp.task("build", gulp.series("clean", "webp", "copy", "css"));
 gulp.task("start", gulp.series("build", "server"));

@@ -82,8 +82,14 @@
 
     & .form__field-wrapper {
       @media @desktop {
-        margin: 0;
+        margin: 0 80px 0 0;
         width: calc(50% - 40px);
+      }
+
+      &:nth-child(2n) {
+        @media @desktop {
+          margin-right: 0;
+        }
       }
     }
   }
