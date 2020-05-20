@@ -373,14 +373,11 @@
     }
   }
 
-  &:focus + .form__label {
-      outline: 2px solid #fdc305;
-  }
-
   &:focus + .form__label::before {
     border-color: #bababa;
   }
 
+  &:focus + .form__label,
   &:active + .form__label {
     opacity: 0.3;
   }

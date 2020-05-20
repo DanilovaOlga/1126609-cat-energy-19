@@ -19,10 +19,6 @@
     margin-right: 23px;
   }
 
-  &:focus {
-    outline: 2px solid #fdc305;
-  }
-
   &:last-child {
     @media @tablet {
       margin-right: 0;
@@ -35,6 +31,7 @@
     line-height: 16px;
     color: @second-line-text-color;
 
+    &:focus,
     &:active {
       opacity: 0.3;
     }
@@ -50,6 +47,7 @@
       fill: @corporate-color;
     }
 
+    &:focus .developer__icon,
     &:active .developer__icon {
       fill-opacity: 0.3;
     }
