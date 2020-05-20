@@ -209,7 +209,6 @@
     content: "";
     top: 50%;
     transform: translateY(-48%);
-    //top: 16px;
     left: -7px;
     width: 67px;
     height: 28px;
@@ -221,7 +220,6 @@
 
     @media @desktop {
       display: block;
-      //top: 23px;
       left: -18px;
       width: 134px;
       height: 57px;
@@ -272,9 +270,14 @@
     }
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     width: 34px;
     background: url("/img/svg/icon-right-arrow-verylong.svg") no-repeat;
+  }
+
+  &:focus {
+    outline: 2px solid #fdc305;
   }
 
   &:active {
